@@ -1,0 +1,94 @@
+managed implementation in class ZBP_R_drc unique;
+strict ( 2 );
+
+define behavior for ZR_IRN alias ZrIrn
+persistent table ztable_irn
+etag master LastChangedAt
+lock master
+authorization master ( global )
+{
+  field ( mandatory : create )
+  BillingDocument;
+
+  field ( readonly )
+  CreatedBy,
+  CreatedAt,
+  LastChangedBy,
+  LastChangedAt,
+  LocalLastChangedAt;
+
+  field ( readonly : update )
+  BillingDocument;
+
+
+  create;
+  update;
+  delete;
+
+  static action generateData parameter ZI_DRCDATAGEN_PARAM result [1] $self;
+
+
+  mapping for ztable_irn corresponding
+    {
+      BillingDocument     = billingdocument;
+      CompanyCode         = companycode;
+      BillingDocumentType = billingdocumenttype;
+      Plant               = plant;
+      BillingDocumentDate = billingdocumentdate;
+      PartyCode           = partycode;
+      PartyName           = partyname;
+      DistributionChannel = distributionchannel;
+      DocumentReferenceID = documentreferenceid;
+      IRNNo               = irnno;
+      IRNStatus           = irnstatus;
+      AckNo               = ackno;
+      AckDate             = ackdate;
+      IrnCancelDate       = irncanceldate;
+      SignedInvoice       = signedinvoice;
+      SignedQRCode        = signedqrcode;
+      EwayValidDate       = ewayvaliddate;
+      Distance            = distance;
+      VehicleNum          = vehiclenum;
+      EwayBillNo          = ewaybillno;
+      EwayTransType       = ewaytranstype;
+      EwayDate            = ewaydate;
+      EwayStatus          = ewaystatus;
+      EwayCancelDate      = ewaycanceldate;
+      Address             = address;
+      Place               = place;
+      PinCode             = pincode;
+      State               = state;
+      StateCode           = statecode;
+      TransporterName     = transportername;
+      TransporterGSTIN    = transportergstin;
+      TransportMode       = transportmode;
+      GRNo                = grno;
+      GRDate              = grdate;
+      ContainerNo         = containerno;
+      LineSealNo          = linesealno;
+      CustomSealNo        = customsealno;
+      GrossWeight         = grossweight;
+      NetWeight           = netweight;
+      DestinationCountry  = destinationcountry;
+      BookingNo           = bookingno;
+      MaxGrossWT          = maxgrosswt;
+      CTareWT             = ctarewt;
+      MaxCargoWT          = maxcargowt;
+      IrnCreatedBy        = irncreatedby;
+      EwayCreatedBy       = ewaycreatedby;
+      Shipbno             = shipbno;
+      Shipbdt             = shipbdt;
+      Port                = port;
+      Refclm              = refclm;
+      Forcur              = forcur;
+      Cntcode             = cntcode;
+      Expduty             = expduty;
+      Trans_ship_pin      = trans_ship_pin;
+      CreatedBy           = created_by;
+      CreatedAt           = created_at;
+      LastChangedBy       = last_changed_by;
+      LastChangedAt       = last_changed_at;
+      LocalLastChangedAt  = local_last_changed_at;
+    }
+
+}

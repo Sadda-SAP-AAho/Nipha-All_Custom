@@ -1,0 +1,596 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'CompCode'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'CompCode'
+annotate view ZC_TABLE_PLANT000 with
+{
+  @EndUserText.label: 'Company Code'
+  @UI.facet: [ {
+    label: 'General Information',
+    id: 'GeneralInfo',
+    purpose: #STANDARD,
+    position: 10 ,
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  //  @UI.identification: [ {
+  //    position: 10 ,
+  //    label: 'Company Code'
+  //  } ]
+  //  @UI.lineItem: [ {
+  //    position: 10 ,
+  //    label: 'Company Code'
+  //  },
+  //  { position: 20, type: #FOR_ACTION, dataAction: 'uploadExcel' , label: 'Upload Excel' } ]
+
+  @UI.selectionField: [ {
+    position: 10
+  } ]
+  @Consumption.valueHelpDefinition: [{ entity : { element: 'CompanyCode', name : 'I_CompanyCodeStdVH' } } ]
+  CompCode;
+
+  @EndUserText.label: 'Plant Code'
+  @UI.identification: [ {
+    position: 20 ,
+    label: 'Plant Code'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 ,
+    label: 'Plant Code'
+  } ]
+  @UI.selectionField: [ {
+    position: 20
+  } ]
+  @Consumption.valueHelpDefinition: [{ entity : { element: 'Plant', name : 'I_PlantStdVH' } } ]
+  PlantCode;
+
+  @EndUserText.label: 'Company Name'
+  @UI.identification: [ {
+    position: 30 ,
+    label: 'Company Name'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 ,
+    label: 'Company Name'
+  } ]
+  @UI.selectionField: [ {
+    position: 30
+  } ]
+  CompanyName;
+
+  @EndUserText.label: 'Plant Name1'
+  @UI.identification: [ {
+    position: 40 ,
+    label: 'Plant Name1'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 ,
+    label: 'Plant Name1'
+  } ]
+  @UI.selectionField: [ {
+    position: 40
+  } ]
+  PlantName1;
+
+  @EndUserText.label: 'Plant Name2'
+  @UI.identification: [ {
+    position: 50 ,
+    label: 'Plant Name2'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 ,
+    label: 'Plant Name2'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 50
+  //  } ]
+  PlantName2;
+
+  @EndUserText.label: 'Address1'
+  @UI.identification: [ {
+    position: 60 ,
+    label: 'Address1'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 ,
+    label: 'Address1'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 60
+  //  } ]
+  Address1;
+
+  @EndUserText.label: 'Address2'
+  @UI.identification: [ {
+    position: 70 ,
+    label: 'Address2'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 ,
+    label: 'Address2'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 70
+  //  } ]
+  Address2;
+
+  @EndUserText.label: 'Address3'
+  @UI.identification: [ {
+    position: 80 ,
+    label: 'Address3'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 ,
+    label: 'Address3'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 80
+  //  } ]
+  Address3;
+
+  @EndUserText.label: 'City'
+  @UI.identification: [ {
+    position: 90 ,
+    label: 'City'
+  } ]
+  @UI.lineItem: [ {
+    position: 90 ,
+    label: 'City'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 90
+  //  } ]
+  City;
+
+  @EndUserText.label: 'District'
+  @UI.identification: [ {
+    position: 100 ,
+    label: 'District'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 ,
+    label: 'District'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 100
+  //  } ]
+  District;
+
+  @EndUserText.label: 'State Code1'
+  @UI.identification: [ {
+    position: 110 ,
+    label: 'State Code1'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 ,
+    label: 'State Code1'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 110
+  //  } ]
+  StateCode1;
+
+  @EndUserText.label: 'State Code2'
+  @UI.identification: [ {
+    position: 120 ,
+    label: 'State Code2'
+  } ]
+  @UI.lineItem: [ {
+    position: 120 ,
+    label: 'State Code2'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 120
+  //  } ]
+  StateCode2;
+
+  @EndUserText.label: 'State Name'
+  @UI.identification: [ {
+    position: 130 ,
+    label: 'State Name'
+  } ]
+  @UI.lineItem: [ {
+    position: 130 ,
+    label: 'State Name'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 130
+  //  } ]
+  StateName;
+
+  @EndUserText.label: 'Pin'
+  @UI.identification: [ {
+    position: 140 ,
+    label: 'Pin'
+  } ]
+  @UI.lineItem: [ {
+    position: 140 ,
+    label: 'Pin'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 140
+  //  } ]
+  Pin;
+
+  @EndUserText.label: 'Country'
+  @UI.identification: [ {
+    position: 150 ,
+    label: 'Country'
+  } ]
+  @UI.lineItem: [ {
+    position: 150 ,
+    label: 'Country'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 150
+  //  } ]
+  Country;
+
+  @EndUserText.label: 'CIN Number'
+  @UI.identification: [ {
+    position: 160 ,
+    label: 'CIN Number'
+  } ]
+  @UI.lineItem: [ {
+    position: 160 ,
+    label: 'CIN Number'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 160
+  //  } ]
+  CinNo;
+
+  @EndUserText.label: 'GSTIN Number'
+  @UI.identification: [ {
+    position: 170 ,
+    label: 'GSTIN Number'
+  } ]
+  @UI.lineItem: [ {
+    position: 170 ,
+    label: 'GSTIN Number'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 170
+  //  } ]
+  GstinNo;
+
+  @EndUserText.label: 'PAN Number'
+  @UI.identification: [ {
+    position: 180 ,
+    label: 'PAN Number'
+  } ]
+  @UI.lineItem: [ {
+    position: 180 ,
+    label: 'PAN Number'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 180
+  //  } ]
+  PanNo;
+
+  @EndUserText.label: 'TAN Number'
+  @UI.identification: [ {
+    position: 190 ,
+    label: 'TAN Number'
+  } ]
+  @UI.lineItem: [ {
+    position: 190 ,
+    label: 'TAN Number'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 190
+  //  } ]
+  TanNo;
+
+  @EndUserText.label: 'Email'
+  @UI.identification: [ {
+    position: 200 ,
+    label: 'Email'
+  } ]
+  @UI.lineItem: [ {
+    position: 200 ,
+    label: 'Email'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 200
+  //  } ]
+  Email;
+
+  @EndUserText.label: 'FSSAI Number'
+  @UI.identification: [ {
+    position: 210 ,
+    label: 'FSSAI Number'
+  } ]
+  @UI.lineItem: [ {
+    position: 210 ,
+    label: 'FSSAI Number'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 210
+  //  } ]
+  FssaiNo;
+
+  @EndUserText.label: 'Mobile Number'
+  @UI.identification: [ {
+    position: 220 ,
+    label: 'Mobile Number'
+  } ]
+  @UI.lineItem: [ {
+    position: 220 ,
+    label: 'Mobile Number'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 220
+  //  } ]
+  MobNo;
+
+  @EndUserText.label: 'Remark1'
+  @UI.identification: [ {
+    position: 230 ,
+    label: 'Remark1'
+  } ]
+  @UI.lineItem: [ {
+    position: 230 ,
+    label: 'Remark1'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 230
+  //  } ]
+  Remark1;
+
+  @EndUserText.label: 'Remark2'
+  @UI.identification: [ {
+    position: 240 ,
+    label: 'Remark2'
+  } ]
+  @UI.lineItem: [ {
+    position: 240 ,
+    label: 'Remark2'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 240
+  //  } ]
+  Remark2;
+
+  @EndUserText.label: 'Remark3'
+  @UI.identification: [ {
+    position: 250 ,
+    label: 'Remark3'
+  } ]
+  @UI.lineItem: [ {
+    position: 250 ,
+    label: 'Remark3'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 250
+  //  } ]
+  Remark3;
+
+  @EndUserText.label: 'Weight Path'
+  @UI.identification: [ {
+    position: 260 ,
+    label: 'Weight Path'
+  } ]
+  @UI.lineItem: [ {
+    position: 260 ,
+    label: 'Weight Path'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 260
+  //  } ]
+  Weightpath;
+
+  @EndUserText.label: 'Weight Path Out'
+  @UI.identification: [ {
+    position: 270 ,
+    label: 'Weight Path Out'
+  } ]
+  @UI.lineItem: [ {
+    position: 270 ,
+    label: 'Weight Path Out'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 270
+  //  } ]
+  WeightpathOut;
+
+  @EndUserText.label: 'Email To Customer'
+  @UI.identification: [ {
+    position: 280 ,
+    label: 'Email To Customer'
+  } ]
+  @UI.lineItem: [ {
+    position: 280 ,
+    label: 'Email To Customer'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 280
+  //  } ]
+  Emailtocustomer;
+
+  @EndUserText.label: 'From Email'
+  @UI.identification: [ {
+    position: 290 ,
+    label: 'From Email'
+  } ]
+  @UI.lineItem: [ {
+    position: 290 ,
+    label: 'From Email'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 290
+  //  } ]
+  Fromemail;
+
+  @EndUserText.label: 'Cc Mails'
+  @UI.identification: [ {
+    position: 300 ,
+    label: 'Cc Mails'
+  } ]
+  @UI.lineItem: [ {
+    position: 300 ,
+    label: 'Cc Mails'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 300
+  //  } ]
+  Ccmails;
+
+  @EndUserText.label: 'Storage Location'
+  @UI.identification: [ {
+    position: 310 ,
+    label: 'Storage Location'
+  } ]
+  @UI.lineItem: [ {
+    position: 310 ,
+    label: 'Storage Location'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 310
+  //  } ]
+  Storagelocation;
+
+
+  @EndUserText.label: 'GSP Username'
+  @UI.identification: [ {
+    position: 311 ,
+    label: 'GSP Username'
+  } ]
+  @UI.lineItem: [ {
+    position: 311 ,
+    label: 'GSP Username'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 310
+  //  } ]
+  Gspusername;
+
+
+  @EndUserText.label: 'GSP Password'
+  @UI.identification: [ {
+    position: 312 ,
+    label: 'GSP Password'
+  } ]
+  @UI.lineItem: [ {
+    position: 312 ,
+    label: 'GSP Password'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 310
+  //  } ]
+  Gsppassword;
+
+
+  @EndUserText.label: 'EWB Username'
+  @UI.identification: [ {
+    position: 313 ,
+    label: 'EWB Username'
+  } ]
+  @UI.lineItem: [ {
+    position: 313 ,
+    label: 'EWB Username'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 310
+  //  } ]
+  Ewbusername;
+
+
+  @EndUserText.label: 'EWB Password'
+  @UI.identification: [ {
+    position: 314 ,
+    label: 'EWB Password'
+  } ]
+  @UI.lineItem: [ {
+    position: 314 ,
+    label: 'EWB Password'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 310
+  //  } ]
+  Ewbpassword;
+
+  @EndUserText.label: 'Business Place'
+  @UI.identification: [ {
+    position: 315 ,
+    label: 'Business Place'
+  } ]
+  @UI.lineItem: [ {
+    position: 315 ,
+    label: 'Business Place'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 310
+  //  } ]
+  Businessplace;
+
+
+  @UI.identification: [ {
+    position: 320
+  } ]
+  @UI.lineItem: [ {
+    position: 320
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 320
+  //  } ]
+  CreatedBy;
+
+  @UI.identification: [ {
+    position: 330
+  } ]
+  @UI.lineItem: [ {
+    position: 330
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 330
+  //  } ]
+  CreatedAt;
+
+  @UI.identification: [ {
+    position: 340
+  } ]
+  @UI.lineItem: [ {
+    position: 340
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 340
+  //  } ]
+  LocalLastChangedBy;
+
+  @UI.identification: [ {
+    position: 350
+  } ]
+  @UI.lineItem: [ {
+    position: 350
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 350
+  //  } ]
+  LocalLastChangedAt;
+
+  @UI.identification: [ {
+    position: 360
+  } ]
+  @UI.lineItem: [ {
+    position: 360
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 360
+  //  } ]
+  LastChangedAt;
+
+  @EndUserText.label: '_Base Entity'
+  @UI.identification: [ {
+    position: 370 ,
+    label: '_Base Entity'
+  } ]
+  @UI.lineItem: [ {
+    position: 370 ,
+    label: '_Base Entity'
+  } ]
+  //  @UI.selectionField: [ {
+  //    position: 370
+  //  } ]
+  _BaseEntity;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition Pending SO Report'
+define service Zsrv_pending_so_rep {
+  expose ZCE_PENDING_SO;
+}

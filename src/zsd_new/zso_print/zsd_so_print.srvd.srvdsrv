@@ -1,0 +1,4 @@
+@EndUserText.label: 'SERVICE DEFINITION FOR SALES ORDER PRINT'
+define service ZSD_SO_PRINT {
+  expose ZCDS_SO_PRINT;
+}

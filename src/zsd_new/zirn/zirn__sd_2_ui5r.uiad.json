@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "ZIRN"
+  },
+  "ui5AppDetails": {
+    "appId": "zirnnew"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_AA75FD3982E301472AB916DA305BBF2F8E60505D_TM",
+    "semanticObject": "zirn_Levi",
+    "action": "DISPLAY",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_AA75FD3982E301472AB916DA305BBF2F8E60505D_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ZIRN",
+        "subtitle": "IRN"
+      }
+    }
+  ]
+}

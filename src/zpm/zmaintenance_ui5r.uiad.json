@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Print Maintenance Order",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Print Maintenance Order"
+  },
+  "ui5AppDetails": {
+    "appId": "printmaintenanceorder"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_00BC8C66A610FC35B164D0678ECB09BDAD0CAB49_TM",
+    "semanticObject": "maintenanceorder",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_00BC8C66A610FC35B164D0678ECB09BDAD0CAB49_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Print Maintenance Order"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+managed implementation in class zbp_i_user_profit unique;
+strict ( 2 );
+
+define behavior for ZI_USER_Profit //alias <alias_name>
+persistent table zprofit_center
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+ // field ( readonly ) UserName, Plant, ProfitCenter;
+  mapping for zprofit_center{
+ UserName = syuser;
+ Plant = plant;
+  ProfitCenter = profitcenter;
+ GLAccount = glaccount;
+ CostCenter = costcenter;
+ }
+}

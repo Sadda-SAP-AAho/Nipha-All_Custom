@@ -1,0 +1,4 @@
+@EndUserText.label: 'service defination'
+define service ZSE_NAV_Certificate {
+  expose ZC_NAV_Certificate;
+}

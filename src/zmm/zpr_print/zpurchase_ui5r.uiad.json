@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Purchase Requisition Print",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Purchase Requisition Print"
+  },
+  "ui5AppDetails": {
+    "appId": "purchaserequisitionprint"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_FBB393B280F03E24E67FEEE0BEC72702E7C2C13D_TM",
+    "semanticObject": "purchaserequisition",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_FBB393B280F03E24E67FEEE0BEC72702E7C2C13D_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Purchase Requisition Print"
+      }
+    }
+  ]
+}

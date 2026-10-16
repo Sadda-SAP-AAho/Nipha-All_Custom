@@ -1,0 +1,226 @@
+@Metadata.layer: #CORE
+@UI:{ 
+       headerInfo:{ 
+                typeName: 'Purchase Register Data',
+                typeNamePlural: 'Purchase Register Data',
+                title:{ 
+                type: #STANDARD,
+                label: 'Purchase Register Data',
+                value: 'AccountingDocument'
+                  }
+       }
+}
+annotate entity ZCPUR_REG_DATA
+    with 
+{
+ @UI.facet: [{ id: 'Shopify_Order_ID',
+             purpose: #STANDARD,
+             type: #IDENTIFICATION_REFERENCE,
+             label: 'PickList Data',
+             position: 10
+ }]
+   @UI: { lineItem: [{ position: 10 , label: 'CompanyCode' }], 
+  identification: [{ position: 10 , label: 'CompanyCode'}] } 
+   @UI.selectionField: [ { position: 10 } ]   
+   CompanyCode;
+   @UI: { lineItem: [{ position: 20 , label: 'Document No.' }], 
+  identification: [{ position: 20 , label: 'Document No.'}] } 
+   @UI.selectionField: [ { position: 15 } ]  
+   AccountingDocument;
+   @UI: { lineItem: [{ position: 30 , label: 'Org. Invoice No.' }], 
+  identification: [{ position: 30 , label: 'Org. Invoice No.'}] } 
+   DocumentReferenceID;
+   @UI: { lineItem: [{ position: 40 , label: 'Business Place' }], 
+  identification: [{ position: 40 , label: 'Business Place'}] } 
+   @UI.selectionField: [ { position: 20 } ]  
+   BusinessPlace;
+   @UI: { lineItem: [{ position: 50 , label: 'Section Code' }], 
+  identification: [{ position: 50 , label: 'Section Code'}] } 
+   TaxSection;
+   @UI: { lineItem: [{ position: 60 , label: 'Withholding Tax Base Amount' }], 
+  identification: [{ position: 60 , label: 'Withholding Tax Base Amount'}] } 
+   wit_base_amount;
+    @UI: { lineItem: [{ position: 70 , label: 'Withholding Tax Amount' }], 
+  identification: [{ position: 70 , label: 'Withholding Tax Amount'}] } 
+   withholding_tax_amt;
+    @UI: { lineItem: [{ position: 80 , label: 'Withholding Tax Code' }], 
+  identification: [{ position: 80 , label: 'Withholding Tax Code'}] } 
+   WithholdingTaxCode;
+   @UI: { lineItem: [{ position: 90 , label: 'FiscalYear' }], 
+  identification: [{ position: 90 , label: 'FiscalYear'}] } 
+   @UI.selectionField: [ { position: 5 } ]   
+   FiscalYear;
+   @UI: { lineItem: [{ position: 100 , label: 'Document Date' }], 
+  identification: [{ position: 100 , label: 'Document Date'}] } 
+   DocumentDate;
+    @UI: { lineItem: [{ position: 110 , label: 'Posting Date' }], 
+  identification: [{ position: 110 , label: 'Posting Date'}] } 
+   @UI.selectionField: [ { position: 25 } ]  
+   PostingDate;
+    @UI: { lineItem: [{ position: 120 , label: 'Document Type' }], 
+  identification: [{ position: 120 , label: 'Document Type'}] } 
+   AccountingDocumentType;
+    @UI: { lineItem: [{ position: 130 , label: 'Text' }], 
+  identification: [{ position: 130 , label: 'Text'}] } 
+   DocumentItemText;
+    @UI: { lineItem: [{ position: 140 , label: 'Vendor Code' }], 
+  identification: [{ position: 140 , label: 'Vendor Code'}] } 
+   @UI.selectionField: [ { position: 30 } ]   
+   Supplier;
+    @UI: { lineItem: [{ position: 150 , label: 'Vendor Name' }], 
+  identification: [{ position: 150 , label: 'Vendor Name'}] } 
+   SupplierFullName;
+    @UI: { lineItem: [{ position: 160 , label: 'State Name' }], 
+  identification: [{ position: 160 , label: 'State Name'}] } 
+   IN_GSTPlaceOfSupply;
+    @UI: { lineItem: [{ position: 170 , label: 'GSTIN' }], 
+  identification: [{ position: 170 , label: 'GSTIN'}] } 
+   TaxNumber3;
+    @UI: { lineItem: [{ position: 180 , label: 'Pan No.' }], 
+  identification: [{ position: 180 , label: 'Pan No.'}] } 
+   BusinessPartnerPanNumber;
+    @UI: { lineItem: [{ position: 190 , label: 'Vendor Class' }], 
+  identification: [{ position: 190 , label: 'Vendor Class'}] } 
+   SupplierAccountGroup;
+    @UI: { lineItem: [{ position: 200 , label: 'G/L Account No.' }], 
+  identification: [{ position: 200 , label: 'G/L Account No.'}] } 
+   GLAccount;
+    @UI: { lineItem: [{ position: 210 , label: 'G/L Account Description' }], 
+  identification: [{ position: 210 , label: 'G/L Account Description'}] } 
+   GLAccountName;  
+    @UI: { lineItem: [{ position: 220 , label: 'Profit Centre' }], 
+  identification: [{ position: 220 , label: 'Profit Centre'}] }
+   @UI.selectionField: [ { position: 35 } ]     
+   ProfitCenter;
+    @UI: { lineItem: [{ position: 230 , label: 'Cost Centre' }], 
+  identification: [{ position: 230 , label: 'Cost Centre'}] } 
+   CostCenter;
+    @UI: { lineItem: [{ position: 240 , label: 'Segment' }], 
+  identification: [{ position: 240 , label: 'Segment'}] } 
+   Segment;
+    @UI: { lineItem: [{ position: 250 , label: 'Tax Code' }], 
+  identification: [{ position: 250 , label: 'Tax Code'}] } 
+   TaxCode;
+    @UI: { lineItem: [{ position: 260 , label: 'Tax Code Description' }], 
+  identification: [{ position: 260 , label: 'Tax Code Description'}] } 
+   TaxCodeName;
+    @UI: { lineItem: [{ position: 270 , label: 'Basic Inv Amount' }], 
+  identification: [{ position: 270 , label: 'Basic Inv Amount'}] } 
+   basic_inv_amt;
+//  @UI: { lineItem: [{ position: 280 , label: 'CGST Inv %' }], 
+//  identification: [{ position: 280 , label: 'CGST Inv %'}] } 
+    @UI: { lineItem: [{ position: 280 , label: 'CGST %' }], 
+  identification: [{ position: 280 , label: 'CGST %'}] } 
+   cgst_per;
+//    @UI: { lineItem: [{ position: 290 , label: 'CGST Inv Amount' }], 
+//  identification: [{ position: 290 , label: 'CGST Inv Amount'}] } 
+      @UI: { lineItem: [{ position: 290 , label: 'CGST Amount' }], 
+  identification: [{ position: 290 , label: 'CGST Amount'}] } 
+   cgst_amt;
+   @UI: { lineItem: [{ position: 300 , label: 'SGST %' }], 
+  identification: [{ position: 300 , label: 'SGST %'}] } 
+   sgst_per;
+    @UI: { lineItem: [{ position: 310 , label: 'SGST Amount' }], 
+  identification: [{ position: 310 , label: 'SGST Amount'}] } 
+   sgst_amt;
+  @UI: { lineItem: [{ position: 320 , label: 'IGST %' }], 
+  identification: [{ position: 320 , label: 'IGST %'}] } 
+   igst_per;
+    @UI: { lineItem: [{ position: 330 , label: 'IGST Amount' }], 
+  identification: [{ position: 330 , label: 'IGST Amount'}] } 
+   igst_amt;
+  @UI: { lineItem: [{ position: 340 , label: 'CGST RCM %' }], 
+  identification: [{ position: 340 , label: 'CGST RCM  %'}] } 
+   cgst_rcm_per;
+    @UI: { lineItem: [{ position: 350 , label: 'CGST RCM (CR)' }], 
+  identification: [{ position: 350 , label: 'CGST RCM  (CR)'}] } 
+   cgst_rcm_amt;
+  @UI: { lineItem: [{ position: 360 , label: 'SGST RCM  %' }], 
+  identification: [{ position: 360 , label: 'SGST RCM  %'}] } 
+   sgst_rcm_per;
+    @UI: { lineItem: [{ position: 370 , label: 'SGST RCM (CR)' }], 
+  identification: [{ position: 370 , label: 'SGST RCM (CR)'}] } 
+   sgst_rcm_amt;
+  @UI: { lineItem: [{ position: 380 , label: 'IGST RCM %' }], 
+  identification: [{ position: 380 , label: 'IGST RCM  %'}] } 
+   igst_rcm_per;
+    @UI: { lineItem: [{ position: 390 , label: 'IGST RCM (CR)' }], 
+  identification: [{ position: 390 , label: 'IGST RCM (CR)'}] } 
+   igst_rcm_amt;
+  @UI: { lineItem: [{ position: 400 , label: 'NO CREDIT CGST %' }], 
+  identification: [{ position: 400 , label: 'NO CREDIT CGST %'}] } 
+   nocr_cgst_per;
+    @UI: { lineItem: [{ position: 410 , label: 'NO CREDIT CGST AMOUNT' }], 
+  identification: [{ position: 410 , label: 'NO CREDIT CGST AMOUNT'}] } 
+   no_credit_cgst_amt;
+   @UI: { lineItem: [{ position: 420 , label: 'NO CREDIT SGST %' }], 
+  identification: [{ position: 420 , label: 'NO CREDIT SGST %'}] } 
+   nocr_sgst_per;
+    @UI: { lineItem: [{ position: 430 , label: 'NO CREDIT SGST AMOUNT' }], 
+  identification: [{ position: 430 , label: 'NO CREDIT SGST AMOUNT'}] } 
+   no_credit_sgst_amt;
+   @UI: { lineItem: [{ position: 440 , label: 'NO CREDIT IGST %' }], 
+  identification: [{ position: 440 , label: 'NO CREDIT IGST %'}] } 
+   nocr_igst_per;
+    @UI: { lineItem: [{ position: 450 , label: 'NO CREDIT IGST AMOUNT' }], 
+  identification: [{ position: 450 , label: 'NO CREDIT IGST AMOUNT'}] } 
+   no_credit_igst_amt;
+    @UI: { lineItem: [{ position: 460 , label: 'Total RCM Payable' }], 
+  identification: [{ position: 460 , label: 'Total RCM Payable'}] } 
+   total_rcm_payable;
+    @UI: { lineItem: [{ position: 470 , label: 'Total Tax Amount' }], 
+  identification: [{ position: 470 , label: 'Total Tax Amount'}] } 
+   total_tax_amount;
+    @UI: { lineItem: [{ position: 480 , label: 'Invoice Amount' }], 
+  identification: [{ position: 480 , label: 'Invoice Amount'}] } 
+   total_inv_amt;
+ 
+ 
+//   @UI: { lineItem: [{ position: 340 , label: 'CGST RCM %' }], 
+//  identification: [{ position: 340 , label: 'CGST RCM INV %'}] } 
+//   cgst_rcm_per;
+//    @UI: { lineItem: [{ position: 350 , label: 'CGST RCM INV (CR)' }], 
+//  identification: [{ position: 350 , label: 'CGST RCM INV (CR)'}] } 
+//   cgst_rcm_amt;
+//  @UI: { lineItem: [{ position: 360 , label: 'SGST RCM INV %' }], 
+//  identification: [{ position: 360 , label: 'SGST RCM INV %'}] } 
+//   sgst_rcm_per;
+//    @UI: { lineItem: [{ position: 370 , label: 'SGST RCM INV (CR)' }], 
+//  identification: [{ position: 370 , label: 'SGST RCM INV (CR)'}] } 
+//   sgst_rcm_amt;
+//  @UI: { lineItem: [{ position: 380 , label: 'IGST RCM INV %' }], 
+//  identification: [{ position: 380 , label: 'IGST RCM INV %'}] } 
+//   igst_rcm_per;
+//    @UI: { lineItem: [{ position: 390 , label: 'IGST RCM INV (CR)' }], 
+//  identification: [{ position: 390 , label: 'IGST RCM INV (CR)'}] } 
+//   igst_rcm_amt;
+//  @UI: { lineItem: [{ position: 400 , label: 'NO CREDIT CGST %' }], 
+//  identification: [{ position: 400 , label: 'NO CREDIT CGST %'}] } 
+//   nocr_cgst_per;
+//    @UI: { lineItem: [{ position: 410 , label: 'NO CREDIT CGST AMOUNT' }], 
+//  identification: [{ position: 410 , label: 'NO CREDIT CGST AMOUNT'}] } 
+//   no_credit_cgst_amt;
+//   @UI: { lineItem: [{ position: 420 , label: 'NO CREDIT SGST %' }], 
+//  identification: [{ position: 420 , label: 'NO CREDIT SGST %'}] } 
+//   nocr_sgst_per;
+//    @UI: { lineItem: [{ position: 430 , label: 'NO CREDIT SGST AMOUNT' }], 
+//  identification: [{ position: 430 , label: 'NO CREDIT SGST AMOUNT'}] } 
+//   no_credit_sgst_amt;
+//   @UI: { lineItem: [{ position: 440 , label: 'NO CREDIT IGST %' }], 
+//  identification: [{ position: 440 , label: 'NO CREDIT IGST %'}] } 
+//   nocr_igst_per;
+//    @UI: { lineItem: [{ position: 450 , label: 'NO CREDIT IGST AMOUNT' }], 
+//  identification: [{ position: 450 , label: 'NO CREDIT IGST AMOUNT'}] } 
+//   no_credit_igst_amt;
+//    @UI: { lineItem: [{ position: 460 , label: 'Total RCM Payable' }], 
+//  identification: [{ position: 460 , label: 'Total RCM Payable'}] } 
+//   total_rcm_payable;
+//    @UI: { lineItem: [{ position: 470 , label: 'Total Tax Amount' }], 
+//  identification: [{ position: 470 , label: 'Total Tax Amount'}] } 
+//   total_tax_amount;
+//    @UI: { lineItem: [{ position: 480 , label: 'Invoice Amount' }], 
+//  identification: [{ position: 480 , label: 'Invoice Amount'}] } 
+//   total_inv_amt;
+    
+    
+}

@@ -1,0 +1,25 @@
+projection;
+strict;
+use side effects;
+define behavior for ZC_GATEPASSHEADER alias ZcGatepassheader
+use etag
+
+{
+  use create;
+  use update;
+  use delete;
+
+  use association _GatePassLine { create; }
+
+}
+
+define behavior for ZC_GATEPASSLINEITM alias ZcGatepassline
+use etag
+
+{
+  use update;
+  use delete;
+
+  use association _GatePassHeader;
+
+}

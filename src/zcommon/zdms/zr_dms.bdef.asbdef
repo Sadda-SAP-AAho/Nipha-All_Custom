@@ -1,0 +1,57 @@
+managed implementation in class ZBP_R_DMS unique;
+strict ( 2 );
+define behavior for ZR_DMS alias ZrDms
+persistent table ZDMS
+etag master LocalChangedAt
+lock master
+authorization master( global )
+{
+  field ( readonly )
+   DocUUID,
+   ReviewedAt,
+   ApprovedAt,
+   CreatedBy,
+   CreatedAt,
+   ChangedBy,
+   ChangedAt,
+   LocalChangedAt;
+
+  field ( numbering : managed )
+   DocUUID;
+
+  create;
+  update;
+  delete;
+
+  mapping for ZDMS corresponding
+  {
+    DocUUID = DOC_UUID;
+    DocNumber = DOC_NUMBER;
+    DocType = DOC_TYPE;
+    DocVersion = DOC_VERSION;
+    Title = TITLE;
+    Description = DESCRIPTION;
+    Status = STATUS;
+    Priority = PRIORITY;
+    Category = CATEGORY;
+    Tags = TAGS;
+    MimeType = MIME_TYPE;
+    DocLink = DOC_LINK;
+    DocSize = DOC_SIZE;
+    RefObjectType = REF_OBJECT_TYPE;
+    RefObjectKey = REF_OBJECT_KEY;
+    Owner = OWNER;
+    DueDate = DUE_DATE;
+    IsConfidential = IS_CONFIDENTIAL;
+    ReviewedBy = REVIEWED_BY;
+    ReviewedAt = REVIEWED_AT;
+    ApprovedBy = APPROVED_BY;
+    ApprovedAt = APPROVED_AT;
+    CreatedBy = CREATED_BY;
+    CreatedAt = CREATED_AT;
+    ChangedBy = CHANGED_BY;
+    ChangedAt = CHANGED_AT;
+    LocalChangedAt = LOCAL_CHANGED_AT;
+  }
+
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Jobber register service definition'
+define service ZJOBBER_REG_SRV_D_V1 {
+  expose ZJOBBER_REG_FINAL_V1;
+}

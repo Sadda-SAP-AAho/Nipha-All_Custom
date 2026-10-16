@@ -1,0 +1,150 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'UserSetup',
+    typeNamePlural: 'UserSetup',
+    title: {
+      type: #STANDARD,
+      label: 'User Setup',
+      value: 'Userid'
+    }
+  },
+  presentationVariant: [ {
+    sortOrder: [ {
+      by: 'Userid',
+      direction: #DESC
+    } ],
+    visualizations: [ {
+      type: #AS_LINEITEM
+    } ]
+  } ]
+}
+annotate view ZC_USER_HEADER with
+{
+  @UI.facet: [ {
+    id: 'idCollection',
+    type: #COLLECTION,
+    label: 'General Information',
+    position: 10
+  },
+  {
+    id: 'idIdentification',
+    parentId: 'idCollection',
+    type: #IDENTIFICATION_REFERENCE,
+    label: 'General Information',
+    position: 20
+  },
+  {
+    id: 'UserSetup',
+    type: #LINEITEM_REFERENCE,
+    label: 'Items',
+    position: 30 ,
+    targetElement: '_zuseritems'
+  },
+  {
+    id:              'MyCustomFieldsGroup',
+    parentId:        'idCollection',
+    type:            #FIELDGROUP_REFERENCE,
+    purpose:         #STANDARD,
+    label:           'DMS Permissions',
+    targetQualifier: 'MySharedGroupQualifier',
+    position:        40
+  } ]
+  @UI.textArrangement: #TEXT_FIRST
+  @UI.lineItem: [ {
+    position: 10 ,
+    importance: #HIGH
+  } ]
+  @UI.identification: [ {
+    position: 10, label: 'User ID'
+  } ]
+  @UI.selectionField: [ {
+    position: 10
+  } ]
+  @Consumption.valueHelpDefinition: [{ entity: { name: 'ZR_USER_VH', element: 'UserID'},
+    additionalBinding: [{ element: 'Username', localElement: 'Username'}]
+  }]
+
+  Userid;
+
+  @UI.lineItem: [ {
+   position: 15 , label: 'User Name'
+  } ]
+
+  @UI.identification: [ {
+   position: 15 , label: 'User Name'
+  } ]
+  Username;
+
+  @UI.lineItem: [ {
+   position: 20 , label: 'Past Days'
+  } ]
+
+  @UI.identification: [ {
+   position: 20 , label: 'Past Days'
+  } ]
+  Pastdays;
+
+  @UI.lineItem: [ {
+   position: 30 , label: 'Future Days'
+  } ]
+  @UI.identification: [ {
+   position: 30 , label: 'Future Days'
+  } ]
+  Futuredays;
+  @UI.lineItem: [ {
+   position: 40 , label: 'Remarks'
+  } ]
+  @UI.identification: [ {
+   position: 40 , label: 'Remarks'
+  } ]
+  Remarks;
+
+  @UI.fieldGroup: [{ qualifier: 'MySharedGroupQualifier', position: 41 }]
+  @EndUserText.label: 'Allow Create'
+  AllowCreate;
+
+  @UI.fieldGroup: [{ qualifier: 'MySharedGroupQualifier', position: 42 }]
+  @EndUserText.label: 'Allow Delete'
+  AllowDelete;
+
+  @UI.fieldGroup: [{ qualifier: 'MySharedGroupQualifier', position: 43 }]
+  @EndUserText.label: 'Allow Download'
+  AllowDownload;
+
+  @UI.fieldGroup: [{ qualifier: 'MySharedGroupQualifier', position: 44 }]
+  @EndUserText.label: 'Allow Preview'
+  AllowView;
+
+  @UI.identification: [ {
+    position: 50
+  } ]
+  @UI.lineItem: [ {
+    position: 50
+  } ]
+  LocalCreatedBy;
+
+  @UI.identification: [ {
+    position: 60
+  } ]
+  @UI.lineItem: [ {
+    position: 60
+  } ]
+  LocalCreatedAt;
+
+  @UI.identification: [ {
+    position: 70
+  } ]
+  @UI.lineItem: [ {
+    position: 70
+  } ]
+  LocalLastChangedBy;
+
+  @UI.identification: [ {
+    position: 80
+  } ]
+  LocalLastChangedAt;
+
+  @UI.hidden: true
+  LastChangedAt;
+}

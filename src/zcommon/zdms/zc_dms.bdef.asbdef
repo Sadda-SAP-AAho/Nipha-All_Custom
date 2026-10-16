@@ -1,0 +1,10 @@
+projection implementation in class ZBP_C_DMS unique;
+strict ( 2 );
+define behavior for ZC_DMS alias ZcDms
+use etag
+{
+  use create;
+  use update;
+  use delete;
+
+}

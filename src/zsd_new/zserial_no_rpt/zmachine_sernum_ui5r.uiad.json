@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "zmachine_ser_num"
+  },
+  "ui5AppDetails": {
+    "appId": "zmacserialnumberrpt"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_8A1E0A6624F60D58B411A5761EC7C9AE8F8BA082_TM",
+    "semanticObject": "zmac_ser_num",
+    "action": "DISPLAY",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_8A1E0A6624F60D58B411A5761EC7C9AE8F8BA082_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "zmachine_ser_num",
+        "subtitle": "Machine Serial Number Report"
+      }
+    }
+  ]
+}

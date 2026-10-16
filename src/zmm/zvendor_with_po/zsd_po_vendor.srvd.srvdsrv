@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition Po Vendor'
+define service ZSD_PO_VENDOR {
+  expose ZC_PO_VENDOR;
+}

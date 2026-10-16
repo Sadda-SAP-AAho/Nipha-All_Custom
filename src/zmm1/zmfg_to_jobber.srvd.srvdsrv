@@ -1,0 +1,4 @@
+@EndUserText.label: 'Manufacturer to Jobber SD'
+define service ZMFG_TO_JOBBER {
+  expose ZMGF_TO_JOBBER_FINAL;
+}

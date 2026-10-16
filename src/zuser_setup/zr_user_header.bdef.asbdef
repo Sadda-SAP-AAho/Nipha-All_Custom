@@ -1,0 +1,92 @@
+managed implementation in class ZBP_R_USER_HEADER unique;
+strict ( 2 );
+
+define behavior for ZR_USER_HEADER alias ZrUserHeader
+persistent table ZUSER_HEADER
+etag master LocalLastChangedAt
+lock master
+authorization master( global )
+{
+  field ( mandatory : create )
+   Userid;
+
+  field ( readonly )
+   LocalCreatedBy,
+   LocalCreatedAt,
+   LocalLastChangedBy,
+   LocalLastChangedAt,
+   LastChangedAt;
+
+  field ( readonly : update )
+   Userid;
+
+
+  create;
+  update;
+  delete;
+
+  association _zuseritems{create;}
+
+  mapping for ZUSER_HEADER
+  {
+    Userid = USERID;
+    Username = USERNAME;
+    Pastdays = PASTDAYS;
+    Futuredays = FUTUREDAYS;
+    Remarks = REMARKS;
+    AllowView           = ALLOW_VIEW;
+  AllowCreate         = ALLOW_CREATE;
+  AllowDownload       = ALLOW_DOWNLOAD;
+  AllowDelete         = ALLOW_DELETE;
+    LocalCreatedBy = LOCAL_CREATED_BY;
+    LocalCreatedAt = LOCAL_CREATED_AT;
+    LocalLastChangedBy = LOCAL_LAST_CHANGED_BY;
+    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+    LastChangedAt = LAST_CHANGED_AT;
+  }
+
+}
+
+define behavior for ZR_USER_ITEM000 alias ZrUserItem000
+persistent table ZUSER_ITEM
+etag master LocalLastChangedAt
+lock dependent by _usersetup
+authorization dependent by _usersetup
+{
+  field ( mandatory : create )
+   Userid,
+   Plant;
+
+  field ( readonly )
+   LocalCreatedBy,
+   LocalCreatedAt,
+   LocalLastChangedBy,
+   LocalLastChangedAt,
+   LastChangedAt;
+
+  field ( readonly : update )
+   Userid,
+   Plant;
+
+
+  update;
+  delete;
+
+  association _usersetup;
+
+
+  mapping for ZUSER_ITEM
+  {
+    Userid = USERID;
+    Plant = PLANT;
+    Username = USERNAME;
+    Remarks = REMARKS;
+    Tcode = TCODE;
+    LocalCreatedBy = LOCAL_CREATED_BY;
+    LocalCreatedAt = LOCAL_CREATED_AT;
+    LocalLastChangedBy = LOCAL_LAST_CHANGED_BY;
+    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+    LastChangedAt = LAST_CHANGED_AT;
+  }
+
+}

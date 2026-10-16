@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "ZGSTRN_DTL",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "ZGSTRN_DTL"
+  },
+  "ui5AppDetails": {
+    "appId": "zgstrndtl.zgstrndtl"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_591D06E28AC957EB6C641EB2FD147C832CC80728_TM",
+    "semanticObject": "ZGSTRN_DTL",
+    "action": "ZGSTRN_DTL",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_591D06E28AC957EB6C641EB2FD147C832CC80728_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ZGSTRN_DTL",
+        "subtitle": "GSTR1 Detail New"
+      }
+    }
+  ]
+}

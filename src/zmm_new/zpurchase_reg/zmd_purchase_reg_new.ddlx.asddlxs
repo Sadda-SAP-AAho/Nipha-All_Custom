@@ -1,0 +1,999 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'Purchase Register',
+    typeNamePlural: 'Purchase Register',
+    title: {
+      type: #STANDARD,
+      label: 'Purchase Register',
+      value: 'Supplierinvoiceitem'
+    }
+  },
+  presentationVariant: [ {
+    sortOrder: [
+    {by: 'Supplierinvoice', direction: #ASC},
+    {by: 'Supplierinvoiceitem', direction: #ASC}
+    ],
+    visualizations: [ {
+      type: #AS_LINEITEM
+    } ]
+  } ]
+}
+annotate view ZCDS_PURCHASE_REG_NEW with
+{
+  @UI.facet: [ {
+    id: 'idpurchaseline',
+    purpose: #STANDARD,
+    type: #IDENTIFICATION_REFERENCE,
+    label: 'purchaseline',
+    position: 10
+  } ]
+  @UI.lineItem: [ {
+    position: 10 ,
+
+    label: 'Company code'
+  } ]
+  @UI.identification: [ {
+    position: 10 ,
+    label: 'Company code'
+  } ]
+  @UI.selectionField: [ {
+  position: 20
+  } ]
+
+  @EndUserText.label: 'Company Code'
+
+  Companycode;
+
+  @UI.lineItem: [ {
+    position: 20 ,
+
+    label: 'Fiscal Year Value'
+  } ]
+  @UI.identification: [ {
+    position: 20 ,
+    label: 'Fiscal Year Value'
+  } ]
+  Fiscalyearvalue;
+
+  @UI.lineItem: [ {
+    position: 100 ,
+
+    label: 'MIRO Document Number'
+  } ]
+  @UI.identification: [ {
+    position: 100 ,
+    label: 'MIRO Document Number'
+  } ]
+  @UI.selectionField: [ {
+  position: 10
+  } ]
+
+  @EndUserText.label: 'MIRO Document Number'
+
+  Supplierinvoice;
+
+  @UI.lineItem: [ {
+    position: 160 ,
+
+    label: 'MIRO Document Item'
+  } ]
+  @UI.identification: [ {
+    position: 160 ,
+    label: 'MIRO Document Item'
+  } ]
+  Supplierinvoiceitem;
+
+  @UI.lineItem: [ {
+    position: 161 ,
+
+    label: 'MIRO UOM'
+  } ]
+  @UI.identification: [ {
+    position: 161 ,
+    label: 'MIRO UOM'
+  } ]
+  Mirouom;
+
+  @UI.lineItem: [ {
+   position: 162 ,
+
+   label: 'MIRO Quantity'
+  } ]
+  @UI.identification: [ {
+    position: 162 ,
+    label: 'MIRO Quantity'
+  } ]
+  Miroquantity;
+
+
+  @UI.lineItem: [ {
+    position: 180 ,
+
+    label: 'Posting Date'
+  } ]
+  @UI.identification: [ {
+    position: 180 ,
+    label: 'Posting Date'
+  } ]
+  @UI.selectionField: [ {
+  position: 40
+  } ]
+
+  @EndUserText.label: 'Posting Date'
+  Postingdate;
+
+   @UI.lineItem: [ {
+    position: 185 ,
+
+    label: 'Plant'
+  } ]
+  @UI.identification: [ {
+    position: 185 ,
+    label: 'Plant'
+  } ]
+  Plant;
+
+  @UI.lineItem: [ {
+    position: 200 ,
+
+    label: 'Plant Name'
+  } ]
+  @UI.identification: [ {
+    position: 200 ,
+    label: 'Plant Name'
+  } ]
+  Plantname;
+
+  @UI.lineItem: [ {
+    position: 205 ,
+
+    label: 'Transaction Type'
+  } ]
+  @UI.identification: [ {
+    position: 205 ,
+    label: 'Transaction Type'
+  } ]
+  Transactiontype;
+
+  @UI.lineItem: [ {
+    position: 210 ,
+
+    label: 'Plant Address'
+  } ]
+  @UI.identification: [ {
+    position: 210 ,
+    label: 'Plant Address'
+  } ]
+  Plantadr;
+
+  @UI.lineItem: [ {
+    position: 220 ,
+
+    label: 'Plant City'
+  } ]
+  @UI.identification: [ {
+    position: 220 ,
+    label: 'Plant City'
+  } ]
+  Plantcity;
+
+  @UI.lineItem: [ {
+    position: 230 ,
+
+    label: 'Plant GST'
+  } ]
+  @UI.identification: [ {
+    position: 230 ,
+    label: 'Plant GST'
+  } ]
+  Plantgst;
+
+  @UI.lineItem: [ {
+    position: 240 ,
+
+    label: 'Plant Pin'
+  } ]
+  @UI.identification: [ {
+    position: 240 ,
+    label: 'Plant Pin'
+  } ]
+  Plantpin;
+
+  @UI.lineItem: [ {
+    position: 250 ,
+
+    label: 'Product'
+  } ]
+  @UI.identification: [ {
+    position: 250 ,
+    label: 'Product'
+  } ]
+  Product;
+
+  @UI.lineItem: [ {
+    position: 260 ,
+
+    label: 'Product Name'
+  } ]
+  @UI.identification: [ {
+    position: 260 ,
+    label: 'Product Name'
+  } ]
+  Productname;
+
+  @UI.lineItem: [ {
+    position: 480 ,
+
+    label: 'Purchase Order'
+  } ]
+  @UI.identification: [ {
+    position: 480 ,
+    label: 'Purchase Order'
+  } ]
+  Purchaseorder;
+
+  @UI.lineItem: [ {
+  position: 660 ,
+
+  label: 'Vendor Invoice No.'
+  } ]
+  @UI.identification: [ {
+    position: 660 ,
+    label: 'Vendor Invoice No.'
+  } ]
+  VendorInvoiceNo;
+
+  @UI.lineItem: [ {
+    position: 680 ,
+
+    label: 'Vendor Invoice Date'
+  } ]
+  @UI.identification: [ {
+    position: 680 ,
+    label: 'Vendor Invoice Date'
+  } ]
+  VendorInvoiceDate;
+
+  @UI.lineItem: [ {
+    position: 600 ,
+
+    label: 'Base Unit'
+  } ]
+  @UI.identification: [ {
+    position: 600 ,
+    label: 'Base Unit'
+  } ]
+  Baseunit;
+
+  @UI.lineItem: [ {
+    position: 620 ,
+
+    label: 'Profit Center'
+  } ]
+  @UI.identification: [ {
+    position: 620 ,
+    label: 'Profit Center'
+  } ]
+  Profitcenter;
+
+
+  @UI.lineItem: [ {
+    position: 40 ,
+
+    label: 'Purchasing Organization'
+  } ]
+  @UI.identification: [ {
+    position: 40 ,
+    label: 'Purchasing Organization'
+  } ]
+  Purchasingorganization;
+
+  @UI.lineItem: [ {
+    position: 60 ,
+
+    label: 'Purchasing Group'
+  } ]
+  @UI.identification: [ {
+    position: 60 ,
+    label: 'Purchasing Group'
+  } ]
+  Purchasinggroup;
+
+
+  @UI.lineItem: [ {
+    position: 280 ,
+
+    label: 'HSN/SAC Code'
+  } ]
+  @UI.identification: [ {
+    position: 280 ,
+    label: 'HSN/SAC Code'
+  } ]
+  @UI.selectionField: [ {
+  position: 30
+  } ]
+  @EndUserText.label: 'HSN/SAC Code'
+  Hsncode;
+
+
+  @UI.lineItem: [ {
+    position: 800 ,
+
+    label: 'Tax Code Name'
+  } ]
+  @UI.identification: [ {
+    position: 800 ,
+    label: 'Tax Code Name'
+  } ]
+  Taxcodename;
+
+  @UI.lineItem: [ {
+    position: 740 ,
+
+    label: 'Original Reference Document'
+  } ]
+  @UI.identification: [ {
+    position: 740 ,
+    label: 'Original Reference Document'
+  } ]
+  Originalreferencedocument;
+
+  @UI.lineItem: [ {
+    position: 820 ,
+
+    label: 'IGST'
+  } ]
+  @UI.identification: [ {
+    position: 820 ,
+    label: 'IGST'
+  } ]
+  Igst;
+
+  @UI.lineItem: [ {
+    position: 840 ,
+
+    label: 'SGST'
+  } ]
+  @UI.identification: [ {
+    position: 840 ,
+    label: 'SGST'
+  } ]
+  Sgst;
+
+  @UI.lineItem: [ {
+    position: 860 ,
+
+    label: 'CGST'
+  } ]
+  @UI.identification: [ {
+    position: 860 ,
+    label: 'CGST'
+  } ]
+  Cgst;
+
+  @UI.lineItem: [ {
+    position: 862 ,
+
+    label: 'Reverse IGST'
+  } ]
+  @UI.identification: [ {
+    position: 862 ,
+    label: 'Reverse IGST'
+  } ]
+  ReverseIgst;
+
+  @UI.lineItem: [ {
+    position: 865 ,
+
+    label: 'Reverse SGST'
+  } ]
+  @UI.identification: [ {
+    position: 865 ,
+    label: 'Reverse SGST'
+  } ]
+  ReverseSgst;
+
+  @UI.lineItem: [ {
+    position: 868 ,
+
+    label: 'Reverese CGST'
+  } ]
+  @UI.identification: [ {
+    position: 868 ,
+    label: 'Reverese CGST'
+  } ]
+  ReverseCgst;
+
+  @UI.lineItem: [ {
+    position: 880 ,
+
+    label: 'Rate IGST'
+  } ]
+  @UI.identification: [ {
+    position: 880 ,
+    label: 'Rate IGST'
+  } ]
+  Rateigst;
+
+  @UI.lineItem: [ {
+    position: 900 ,
+
+    label: 'Rate CGST'
+  } ]
+  @UI.identification: [ {
+    position: 900 ,
+    label: 'Rate CGST'
+  } ]
+  Ratecgst;
+
+  @UI.lineItem: [ {
+    position: 920 ,
+
+    label: 'Rate SGST'
+  } ]
+  @UI.identification: [ {
+    position: 920 ,
+    label: 'Rate SGST'
+  } ]
+  Ratesgst;
+
+  @UI.lineItem: [ {
+    position: 760 ,
+
+    label: 'Basic Rate'
+  } ]
+  @UI.identification: [ {
+    position: 760 ,
+    label: 'Basic Rate'
+  } ]
+  Basicrate;
+
+  @UI.lineItem: [ {
+    position: 780 ,
+
+    label: 'Tax Base Amount'
+  } ]
+  @UI.identification: [ {
+    position: 780 ,
+    label: 'Tax Base Amount'
+  } ]
+  Netamount;
+
+  @UI.lineItem: [ {
+    position: 781 ,
+
+    label: 'PO Currency'
+  } ]
+  @UI.identification: [ {
+    position: 781 ,
+    label: 'PO Currency'
+  } ]
+  Pocurrency;
+
+  @UI.lineItem: [ {
+    position: 1580 ,
+
+    label: 'Tax Amount'
+  } ]
+  @UI.identification: [ {
+    position: 1580 ,
+    label: 'Tax Amount'
+  } ]
+  Taxamount;
+
+  @UI.lineItem: [ {
+    position: 1581 ,
+    label: 'TCS Amount'
+  } ]
+  @UI.identification: [ {
+    position: 1581 ,
+    label: 'TCS Amount'
+  } ]
+  Tcsamount;
+
+  @UI.lineItem: [ {
+    position: 940 ,
+
+    label: 'Round off'
+  } ]
+  @UI.identification: [ {
+    position: 940 ,
+    label: 'Round off'
+  } ]
+  Roundoff;
+
+  @UI.lineItem: [ {
+    position: 960 ,
+
+    label: 'Mandi Tax'
+  } ]
+  @UI.identification: [ {
+    position: 960 ,
+    label: 'Mandi Tax'
+  } ]
+  Manditax;
+
+  @UI.lineItem: [ {
+    position: 980 ,
+
+    label: 'Mandi Cess'
+  } ]
+  @UI.identification: [ {
+    position: 980 ,
+    label: 'Mandi Cess'
+  } ]
+  Mandicess;
+
+
+  @UI.lineItem: [ {
+    position: 1600 ,
+
+    label: 'Total Amount'
+  } ]
+  @UI.identification: [ {
+    position: 1600 ,
+    label: 'Total Amount'
+  } ]
+  Totalamount;
+
+  @UI.lineItem: [ {
+  position: 1040 ,
+
+  label: 'Insurance Charges Percentage'
+  } ]
+  @UI.identification: [ {
+    position: 1040 ,
+    label: 'Insurance Charges Percentage'
+  } ]
+  Insurancechargesper;
+
+  @UI.lineItem: [ {
+  position: 1560 ,
+
+  label: 'Other Charges'
+  } ]
+  @UI.identification: [ {
+    position: 1560 ,
+    label: 'Other Charges'
+  } ]
+  Othercharges;
+  @UI.lineItem: [ {
+   position: 1280 ,
+
+   label: 'Packaging'
+  } ]
+  @UI.identification: [ {
+    position: 1280 ,
+    label: 'Packaging'
+  } ]
+  Packaging;
+
+  @UI.lineItem: [ {
+      position: 1080 ,
+
+      label: 'Anti-Dumping Percentage'
+  } ]
+  @UI.identification: [ {
+      position: 1080 ,
+      label: 'Anti-Dumping Percentage'
+  } ]
+  Antidumpingper;
+
+  @UI.lineItem: [ {
+      position: 1100 ,
+
+      label: 'Anti-Dumping Value'
+  } ]
+  @UI.identification: [ {
+      position: 1100 ,
+      label: 'Anti-Dumping Value'
+  } ]
+  Antidumpingvalue;
+
+  @UI.lineItem: [ {
+      position: 1200 ,
+
+      label: 'CHA Charges Value'
+  } ]
+  @UI.identification: [ {
+      position: 1200 ,
+      label: 'CHA Charges Value'
+  } ]
+  Chachargesval;
+
+  @UI.lineItem: [ {
+      position: 1220 ,
+
+      label: 'CIF Value'
+  } ]
+  @UI.identification: [ {
+      position: 1220 ,
+      label: 'CIF Value'
+  } ]
+  Cifvalue;
+
+  @UI.lineItem: [ {
+      position: 1240 ,
+
+      label: 'CIF and Custom Duty'
+  } ]
+  @UI.identification: [ {
+      position: 1240 ,
+      label: 'CIF and Custom Duty'
+  } ]
+  Cifandcustomduty;
+
+  @UI.lineItem: [ {
+      position: 1260 ,
+
+      label: 'Clearing Charges'
+  } ]
+  @UI.identification: [ {
+      position: 1260 ,
+      label: 'Clearing Charges'
+  } ]
+  Clearingcharges;
+
+  @UI.lineItem: [ {
+      position: 1120 ,
+
+      label: 'Freight Value'
+  } ]
+  @UI.identification: [ {
+      position: 1120 ,
+      label: 'Freight Value'
+  } ]
+  Freightval;
+
+  @UI.lineItem: [ {
+      position: 1140 ,
+
+      label: 'Freight Quantity'
+  } ]
+  @UI.identification: [ {
+      position: 1140 ,
+      label: 'Freight Quantity'
+  } ]
+  Freightqty;
+
+  @UI.lineItem: [ {
+      position: 1060 ,
+
+      label: 'Insurance Cost'
+  } ]
+  @UI.identification: [ {
+      position: 1060 ,
+      label: 'Insurance Cost'
+  } ]
+  Insurancecost;
+
+  @UI.lineItem: [ {
+      position: 1160 ,
+
+      label: 'Loading/Unloading Charges Quantity'
+  } ]
+  @UI.identification: [ {
+      position: 1160 ,
+      label: 'Loading/Unloading Charges Quantity'
+  } ]
+  Ldguldgchgsqty;
+
+  @UI.lineItem: [ {
+      position: 1180 ,
+
+      label: 'Loading/Unloading Charges Value'
+  } ]
+  @UI.identification: [ {
+      position: 1180 ,
+      label: 'Loading/Unloading Charges Value'
+  } ]
+  Ldguldgchgsval;
+
+  @UI.lineItem: [ {
+      position: 261 ,
+
+      label: 'Product Group'
+  } ]
+  @UI.identification: [ {
+      position: 261 ,
+      label: 'Product Group'
+  } ]
+  Materialgroup;
+
+  @UI.lineItem: [ {
+      position: 320 ,
+
+      label: 'Material Type'
+  } ]
+  @UI.identification: [ {
+      position: 320 ,
+      label: 'Material Type'
+  } ]
+  Materialtype;
+
+  @UI.lineItem: [ {
+      position: 80 ,
+
+      label: 'MIRO Document Type'
+  } ]
+  @UI.identification: [ {
+      position: 780 ,
+      label: 'MIRO Document Type'
+  } ]
+  Mirodocumenttype;
+
+  @UI.lineItem: [ {
+      position: 1300 ,
+
+      label: 'Packing Charges Percentage'
+  } ]
+  @UI.identification: [ {
+      position: 1300 ,
+      label: 'Packing Charges Percentage'
+  } ]
+  Packingchargesper;
+
+  @UI.lineItem: [ {
+      position: 1320 ,
+
+      label: 'Packing Charges Quantity'
+  } ]
+  @UI.identification: [ {
+      position: 1320 ,
+      label: 'Packing Charges Quantity'
+  } ]
+  Packingchargesqty;
+
+  @UI.lineItem: [ {
+      position: 1680 ,
+
+      label: 'Vendor Code'
+  } ]
+  @UI.identification: [ {
+      position: 1680 ,
+      label: 'Vendor Code'
+  } ]
+  Vendorcode;
+
+  @UI.lineItem: [ {
+      position: 1681 ,
+
+      label: 'Vendor Type'
+  } ]
+  @UI.identification: [ {
+      position: 1681 ,
+      label: 'Vendor Type'
+  } ]
+  Vendortype;
+
+  @UI.lineItem: [ {
+      position: 1720 ,
+
+      label: 'Vendor GSTIN'
+  } ]
+  @UI.identification: [ {
+      position: 1720 ,
+      label: 'Vendor GSTIN'
+  } ]
+  Vendorgstin;
+
+  @UI.lineItem: [ {
+      position: 1760 ,
+
+      label: 'Vendor Name'
+  } ]
+  @UI.identification: [ {
+      position: 1760 ,
+      label: 'Vendor Name'
+  } ]
+  Vendorname;
+
+  @UI.lineItem: [ {
+      position: 1780 ,
+
+      label: 'Vendor PAN No'
+  } ]
+  @UI.identification: [ {
+      position: 1780 ,
+      label: 'Vendor PAN No'
+  } ]
+  Vendorpanno;
+
+  @UI.lineItem: [ {
+      position: 1820 ,
+
+      label: 'Vendor TAN No'
+  } ]
+  @UI.identification: [ {
+      position: 1820 ,
+      label: 'Vendor TAN No'
+  } ]
+  Vendortanno;
+
+  @UI.lineItem: [ {
+     position: 1480 ,
+
+     label: 'Broker Charges Quantity'
+  } ]
+  @UI.identification: [ {
+      position: 1480 ,
+      label: 'Broker Charges Quantity'
+  } ]
+  Brokerchargesqty;
+
+  @UI.lineItem: [ {
+     position: 1500 ,
+
+     label: 'Broker Charges Value'
+  } ]
+  @UI.identification: [ {
+      position: 1500 ,
+      label: 'Broker Charges Value'
+  } ]
+  Brokerchargesval;
+
+  @UI.lineItem: [ {
+     position: 1501 ,
+
+     label: 'Purchase Commision Quantity'
+  } ]
+  @UI.identification: [ {
+      position: 1501 ,
+      label: 'Purchase Commision Quantity'
+  } ]
+  Purchasecomissionqty;
+
+  @UI.lineItem: [ {
+     position: 1502 ,
+
+     label: 'Purchase Commision Value'
+  } ]
+  @UI.identification: [ {
+      position: 1502 ,
+      label: 'Purchase Commision Value'
+  } ]
+  Purchasecomissionval;
+
+  @UI.lineItem: [ {
+   position: 1440 ,
+
+   label: 'Broker Vendor Code'
+  } ]
+  @UI.identification: [ {
+      position: 1440 ,
+      label: 'Broker Vendor Code'
+  } ]
+  Brokervendorcode;
+
+  @UI.lineItem: [ {
+    position: 1460 ,
+
+    label: 'Broker Vendor Name'
+  } ]
+  @UI.identification: [ {
+      position: 1460 ,
+      label: 'Broker Vendor Name'
+  } ]
+  Brokervendorname;
+
+  @UI.lineItem: [ {
+      position: 1340 ,
+
+      label: 'Kisan Kalyan Tax'
+  } ]
+  @UI.identification: [ {
+      position: 1340 ,
+      label: 'Kisan Kalyan Tax'
+  } ]
+  Kisankalyantax;
+
+  @UI.lineItem: [ {
+      position: 1360 ,
+
+      label: 'Safe Guard Percentage'
+  } ]
+  @UI.identification: [ {
+      position: 1360 ,
+      label: 'Safe Guard Percentage'
+  } ]
+  Safeguardper;
+
+  @UI.lineItem: [ {
+    position: 1380 ,
+
+    label: 'Surveyor Charges Quantity'
+  } ]
+  @UI.identification: [ {
+      position: 1380 ,
+      label: 'Surveyor Charges Quantity'
+  } ]
+  Surveyorchargesqty;
+
+
+  @UI.lineItem: [ {
+     position: 1400 ,
+
+     label: 'Surveyor Charges Value'
+  } ]
+  @UI.identification: [ {
+      position: 1400 ,
+      label: 'Surveyor Charges Value'
+  } ]
+  Surveyorchargesval;
+
+  @UI.lineItem: [ {
+     position: 1420 ,
+
+     label: 'AIDC Percentage'
+  } ]
+  @UI.identification: [ {
+      position: 1420 ,
+      label: 'AIDC Percentage'
+  } ]
+  Aidcper;
+
+  @UI.lineItem: [ {
+   position: 1420 ,
+
+   label: 'MIRO Item Type'
+  } ]
+  @UI.identification: [ {
+      position: 1420 ,
+      label: 'MIRO Item Type'
+  } ]
+  MiroItemType;
+  @UI.lineItem: [ {
+   position: 1430 ,
+
+   label: 'Is Reversed'
+  } ]
+  @UI.identification: [ {
+      position: 1430 ,
+      label: 'Is Reversed'
+  } ]
+  Isreversed;
+  @UI.lineItem: [ {
+   position: 1440 ,
+
+   label: 'Refrence Invoice Number'
+  } ]
+  @UI.identification: [ {
+      position: 1440 ,
+      label: 'Refrence Invoice Number'
+  } ]
+  Referenceinvoicenumber;
+  @UI.lineItem: [ {
+   position: 1450 ,
+
+   label: 'Exchange Rate'
+  } ]
+  @UI.identification: [ {
+      position: 1450 ,
+      label: 'Exchange Rate'
+  } ]
+  Exchangerate;
+
+  @UI.lineItem: [ {
+   position: 1460 ,
+
+   label: 'Supplier Invoice Item Text'
+  } ]
+  @UI.identification: [ {
+      position: 1460 ,
+      label: 'Supplier Invoice Item Text'
+  } ]
+  SupplierInvoiceItemText;
+  
+    @UI.lineItem: [ {
+   position: 1470 ,
+
+   label: 'Created By'
+  } ]
+  @UI.identification: [ {
+      position: 1470 ,
+      label: 'Created By'
+  } ]
+  CreatedBy;
+
+}

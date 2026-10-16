@@ -1,0 +1,4 @@
+@EndUserText.label: 'ZCONSUMPTION_REPORT_DEF'
+define service ZCONSUMPTION_REPORT_DEF {
+  expose ZCONSUMPTION_REPORT_UI;
+}

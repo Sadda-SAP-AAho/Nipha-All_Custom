@@ -1,0 +1,40 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Maintain DATABASE TABLE FOR SALES TEAMS",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "serviceConfiguration": {
+    "serviceBinding": "ZUI_DATABASETABLEFORSAL_O4",
+    "serviceName": "ZUI_DATABASETABLEFORSAL_O4",
+    "serviceVersion": "0001",
+    "rootEntitySet": "DatabaseTableForAll",
+    "name": "DATABASE TABLE FOR SALES TEAMS",
+    "transportObject": "ZDATABASETABLEFORSALT",
+    "configurationGroup": "",
+    "skipRootEntity": true
+  },
+  "appConfiguration": {
+    "listReport": {},
+    "objectPages": [
+      {
+        "entitySet": "DatabaseTableForAll",
+        "variantManagement": "control"
+      }
+    ],
+    "tableSettings": [
+      {
+        "entitySet": "DatabaseTableForSal",
+        "tableType": "gridTable",
+        "selectionMode": "single",
+        "selectAll": true,
+        "rowCountMode": "auto",
+        "frozenColumnCount": 3,
+        "creationModeName": "inlineCreationRows",
+        "createAtEnd": true,
+        "widthIncludingColumnHeader": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for Profit Center Maintain'
+define service ZSD_PROFIT_CENTER {
+  expose ZC_USER_PROFIT;
+}

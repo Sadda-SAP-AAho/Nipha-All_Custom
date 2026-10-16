@@ -1,0 +1,77 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'DatabaseForBankDeta', 
+    typeNamePlural: 'DatabaseForBankDetas', 
+    title: {
+      type: #STANDARD, 
+      label: 'DATABASE FOR BANK DETAILS', 
+      value: 'Accountno'
+    }
+  }
+}
+annotate view ZI_DatabaseForBankDeta with
+{
+  @UI.identification: [ {
+    position: 1 ,
+    label: 'A/C No'
+  } ]
+  @UI.lineItem: [ {
+    position: 1 ,
+    label: 'A/C No'
+  }, 
+  {
+    type: #FOR_ACTION, 
+    dataAction: 'Copy', 
+    label: 'Copy Selected Entry', 
+    invocationGrouping: #CHANGE_SET
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_DatabaseForBankDeta', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'DATABASE FOR BANK DETAILS', 
+    position: 1 
+  } ]
+  Accountno;
+  
+  @UI.identification: [ {
+    position: 2 ,
+    label: 'IFSC'
+  } ]
+  @UI.lineItem: [ {
+    position: 2,
+    label: 'IFSC'
+  } ]
+  Ifsc;
+  
+  @UI.identification: [ {
+    position: 3 , 
+    label: 'Bank Detail'
+  } ]
+  @UI.lineItem: [ {
+    position: 3 , 
+    label: 'Bank Detail'
+  } ]
+  Bankdetails;
+  
+  @UI.identification: [ {
+    position: 4 , 
+    label: 'MICR'
+  } ]
+  @UI.lineItem: [ {
+    position: 4 , 
+    label: 'MICR'
+  } ]
+  Micr;
+  
+  @UI.identification: [ {
+    position: 5 , 
+    label: 'RTGS'
+  } ]
+  @UI.lineItem: [ {
+    position: 5 , 
+    label: 'RTGS'
+  } ]
+  Rtgs;
+}

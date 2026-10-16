@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_TmgForMaterialCode_S'
+define service ZUI_TMGFORMATERIALCODE {
+  expose ZI_TMGFORMATERIALCODE_S as TmgForMaterialCoAll;
+  expose ZI_TMGFORMATERIALCODE as TmgForMaterialCode;
+}

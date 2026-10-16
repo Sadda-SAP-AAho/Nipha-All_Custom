@@ -1,0 +1,46 @@
+managed implementation in class ZBP_R_DMS_BANKSTM000 unique;
+strict ( 2 );
+define behavior for ZR_DMS_BANKSTM000 alias ZrDmsBankstm000
+persistent table ZDMS_BANKSTM
+etag master LocalChangedAt
+lock master
+authorization master( global )
+{
+  field ( mandatory : create )
+   CompCode,
+   ActDoc;
+
+  field ( readonly )
+   CreatedBy,
+   CreatedAt,
+   ChangedBy,
+   ChangedAt,
+   LocalChangedAt;
+
+  field ( readonly : update )
+   CompCode,
+   ActDoc;
+
+
+  create;
+  update;
+  delete;
+
+  mapping for ZDMS_BANKSTM
+  {
+    CompCode = COMP_CODE;
+    ActDoc = ACT_DOC;
+    Fiscalyear = fiscal_year;
+
+    HeaderText = ACT_DOC_HEADERTEXT;
+    ActDocType = ACT_DOC_TYPE;
+//    ActDocHeadertext = DOC_DATE;
+    PostDate = POST_DATE;
+    CreatedBy = CREATED_BY;
+    CreatedAt = CREATED_AT;
+    ChangedBy = CHANGED_BY;
+    ChangedAt = CHANGED_AT;
+    LocalChangedAt = LOCAL_CHANGED_AT;
+  }
+
+}

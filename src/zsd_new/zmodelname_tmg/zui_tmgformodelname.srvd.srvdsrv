@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_TmgForModelName_S'
+define service ZUI_TMGFORMODELNAME {
+  expose ZI_TMGFORMODELNAME_S as TmgForModelNameAll;
+  expose ZI_TMGFORMODELNAME as TmgForModelName;
+}

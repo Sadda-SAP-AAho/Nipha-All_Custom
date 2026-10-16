@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "User with Profit Center",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "User with Profit Center"
+  },
+  "ui5AppDetails": {
+    "appId": "userwithprofitcenter"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_6FB3CDA83E505061A0717FC8D6289A03B24B859F_TM",
+    "semanticObject": "zuser",
+    "action": "zuser",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_6FB3CDA83E505061A0717FC8D6289A03B24B859F_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "User with Profit Center",
+        "subtitle": "User with Profit Center"
+      }
+    }
+  ]
+}

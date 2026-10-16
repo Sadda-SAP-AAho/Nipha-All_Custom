@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_DatabaseTableForSal_S'
+define service ZUI_DATABASETABLEFORSAL {
+  expose ZI_DATABASETABLEFORSAL_S as DatabaseTableForAll;
+  expose ZI_DATABASETABLEFORSAL as DatabaseTableForSal;
+}

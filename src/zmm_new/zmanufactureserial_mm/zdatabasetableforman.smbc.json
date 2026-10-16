@@ -1,0 +1,40 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Maintain DATABASE TABLE FOR MANUFACTURE SERIES MM",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "serviceConfiguration": {
+    "serviceBinding": "ZUI_DATABASETABLEFORMAN_O4",
+    "serviceName": "ZUI_DATABASETABLEFORMAN_O4",
+    "serviceVersion": "0001",
+    "rootEntitySet": "DatabaseTableForAll",
+    "name": "DATABASE TABLE FOR MANUFACTURE SERIES MM",
+    "transportObject": "ZDATABASETABLEFORMANT",
+    "configurationGroup": "",
+    "skipRootEntity": true
+  },
+  "appConfiguration": {
+    "listReport": {},
+    "objectPages": [
+      {
+        "entitySet": "DatabaseTableForAll",
+        "variantManagement": "control"
+      }
+    ],
+    "tableSettings": [
+      {
+        "entitySet": "DatabaseTableForMan",
+        "tableType": "gridTable",
+        "selectionMode": "single",
+        "selectAll": true,
+        "rowCountMode": "auto",
+        "frozenColumnCount": 1,
+        "creationModeName": "inlineCreationRows",
+        "createAtEnd": true,
+        "widthIncludingColumnHeader": true
+      }
+    ]
+  }
+}

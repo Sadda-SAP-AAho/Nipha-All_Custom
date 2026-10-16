@@ -1,0 +1,66 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'DatabaseTableForMan', 
+    typeNamePlural: 'DatabaseTableForMans', 
+    title: {
+      type: #STANDARD, 
+      label: 'DATABASE TABLE FOR MANUFACTURE SERIES MM', 
+      value: 'SerialNo'
+    }
+  }
+}
+annotate view ZI_DatabaseTableForMan with
+{
+  @UI.identification: [ {
+    position: 1 
+  } ]
+  @UI.lineItem: [ {
+    position: 1 ,
+    label: 'Serial No.'
+  }, 
+  {
+    type: #FOR_ACTION, 
+    dataAction: 'Copy', 
+    label: 'Copy Selected Entry', 
+    invocationGrouping: #CHANGE_SET
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_DatabaseTableForMan', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'DATABASE TABLE FOR MANUFACTURE SERIES MM', 
+    position: 1 
+  } ]
+  SerialNo;
+  
+  @UI.identification: [ {
+    position: 2 , 
+    label: 'MaterialCode'
+  } ]
+  @UI.lineItem: [ {
+    position: 2 , 
+    label: 'Material Code'
+  } ]
+  MaterialCode;
+  
+  @UI.identification: [ {
+    position: 3 , 
+    label: 'Description'
+  } ]
+  @UI.lineItem: [ {
+    position: 3 , 
+    label: 'Description'
+  } ]
+  Description;
+  
+  @UI.identification: [ {
+    position: 4 , 
+    label: 'MfrSerialno'
+  } ]
+  @UI.lineItem: [ {
+    position: 4 , 
+    label: 'MFR Serial No'
+  } ]
+  MfrSerialno;
+}

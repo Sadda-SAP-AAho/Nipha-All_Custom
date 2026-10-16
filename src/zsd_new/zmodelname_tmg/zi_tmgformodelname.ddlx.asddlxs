@@ -1,0 +1,53 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'TmgForModelName', 
+    typeNamePlural: 'TmgForModelNames', 
+    title: {
+      type: #STANDARD, 
+      label: 'TMG FOR MODEL NAME', 
+      value: 'Code'
+    }
+  }
+}
+annotate view ZI_TmgForModelName with
+{
+  @UI.identification: [ {
+    position: 1 
+  } ]
+  @UI.lineItem: [ {
+    position: 1 
+  }, 
+  {
+    type: #FOR_ACTION, 
+    dataAction: 'Copy', 
+    label: 'Copy Selected Entry', 
+    invocationGrouping: #CHANGE_SET
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_TmgForModelName', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'TMG FOR MODEL NAME', 
+    position: 1 
+  } ]
+  Code;
+  
+  @UI.identification: [ {
+    position: 2 
+  } ]
+  @UI.lineItem: [ {
+    position: 2 
+  } ]
+  Language;
+  
+  @UI.identification: [ {
+    position: 3 , 
+    label: 'Description'
+  } ]
+  @UI.lineItem: [ {
+    position: 3 , 
+    label: 'Description'
+  } ]
+  Description;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Purchase Register Service Definition'
+define service ZSD_PUR_REG {
+  expose ZCPUR_REG_DATA;
+}

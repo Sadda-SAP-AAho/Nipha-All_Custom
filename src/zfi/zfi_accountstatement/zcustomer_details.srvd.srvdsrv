@@ -1,0 +1,5 @@
+@EndUserText.label: 'ZCUSTOMER_DETAILS'
+define service ZCUSTOMER_DETAILS {
+  expose ZCUSTOMER_DETAILS as Customer;
+  expose ZSUPPLIER_DETAILS as Supplier;
+}

@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Machine Serial No Report"
+  },
+  "ui5AppDetails": {
+    "appId": "zserialnorpt"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_9D0193A3BAF46F29E82731F84404AF8D552CEE05_TM",
+    "semanticObject": "zserial_no_rpt",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_9D0193A3BAF46F29E82731F84404AF8D552CEE05_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Machine Serial No Report",
+        "subtitle": "ZMSN"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Jobber to manufacturer'
+define service ZJOBBER_TO_MGF {
+  expose ZJOBBER_TO_MGF_FINAL;
+}

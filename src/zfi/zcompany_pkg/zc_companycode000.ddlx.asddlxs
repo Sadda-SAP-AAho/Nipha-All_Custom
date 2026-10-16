@@ -1,0 +1,169 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'CompanyCode'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'CompanyCode'
+annotate view ZC_COMPANYCODE000 with
+{
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 
+  } ]
+  @UI.lineItem: [ {
+    position: 10 
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  @Consumption.valueHelpDefinition: [{ entity:{ element: 'CompanyCode',name:'I_CompanyCodeStdVH' }
+    ,additionalBinding: [{ localElement: 'CompanyName',element: 'CompanyCodeName' }] }]
+  CompanyCode;
+  
+  @UI.identification: [ {
+    position: 20 
+  } ]
+  @UI.lineItem: [ {
+    position: 20 
+  } ]
+  CompanyName;
+  
+  @EndUserText.label: 'Address'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Address'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Address'
+  } ]
+  Address;
+  
+  @EndUserText.label: 'Cin'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Cin'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Cin'
+  } ]
+  Cin;
+  
+  @EndUserText.label: 'Pan'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Pan'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Pan'
+  } ]
+  Pan;
+  
+  @EndUserText.label: 'Fssai'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'Fssai'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'Fssai'
+  } ]
+  Fssai;
+  
+    @EndUserText.label: 'Gst No'
+  @UI.identification: [ {
+    position: 65 , 
+    label: 'Gst No'
+  } ]
+  @UI.lineItem: [ {
+    position: 65 , 
+    label: 'Gst No'
+  } ]
+  GstNo;
+  
+  @EndUserText.label: 'RegNo'
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'RegNo'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'RegNo'
+  } ]
+  RegNo;
+  
+  @EndUserText.label: 'Remark1'
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'Remark1'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 , 
+    label: 'Remark1'
+  } ]
+  Remark1;
+  
+  @EndUserText.label: 'Remark2'
+  @UI.identification: [ {
+    position: 90 , 
+    label: 'Remark2'
+  } ]
+  @UI.lineItem: [ {
+    position: 90 , 
+    label: 'Remark2'
+  } ]
+  Remark2;
+  
+  @EndUserText.label: 'Remark3'
+  @UI.identification: [ {
+    position: 100 , 
+    label: 'Remark3'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: 'Remark3'
+  } ]
+  Remark3;
+  
+  @UI.identification: [ {
+    position: 110 
+  } ]
+  @UI.lineItem: [ {
+    position: 110 
+  } ]
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 120 
+  } ]
+  @UI.lineItem: [ {
+    position: 120 
+  } ]
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 130 
+  } ]
+  @UI.lineItem: [ {
+    position: 130 
+  } ]
+  LastChangedBy;
+  
+  @UI.identification: [ {
+    position: 140 
+  } ]
+  @UI.lineItem: [ {
+    position: 140 
+  } ]
+  LastChangedAt;
+  
+  @UI.hidden: true
+  LocalLastChangedAt;
+}

@@ -1,0 +1,13 @@
+projection implementation in class ZBP_C_DMS_BANKSTM000 unique;
+strict ( 2 );
+extensible;
+//use draft;
+use side effects;
+define behavior for ZC_DMS_BANKSTM000 alias ZcDmsBankstm000
+extensible
+use etag
+{
+  use create;
+  use update;
+  use delete;
+}

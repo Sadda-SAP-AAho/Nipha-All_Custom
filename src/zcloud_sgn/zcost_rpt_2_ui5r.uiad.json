@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Cost Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Cost Report"
+  },
+  "ui5AppDetails": {
+    "appId": "costreportnipha"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_125FE126AF7A85339FBF74AF8E60300F0A4AB74A_TM",
+    "semanticObject": "costreport",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_125FE126AF7A85339FBF74AF8E60300F0A4AB74A_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Cost Report"
+      }
+    }
+  ]
+}

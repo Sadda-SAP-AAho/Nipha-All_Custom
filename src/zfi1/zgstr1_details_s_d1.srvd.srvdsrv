@@ -1,0 +1,4 @@
+@EndUserText.label: 'GSTR1 Details Report new'
+define service ZGSTR1_DETAILS_S_D1 {
+  expose ZGSTR1_DETAILS_FI_BASE_final;
+}

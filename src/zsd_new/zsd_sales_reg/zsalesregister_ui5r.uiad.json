@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "SD Sales Register"
+  },
+  "ui5AppDetails": {
+    "appId": "salesregister.zsdsalesreg"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_31179D9BB19975BAC9AD6529313CDA24272DE638_TM",
+    "semanticObject": "ZSALES_REGISTER",
+    "action": "List",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_31179D9BB19975BAC9AD6529313CDA24272DE638_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "SD Sales Register",
+        "subtitle": "ZSALES_REG"
+      }
+    }
+  ]
+}

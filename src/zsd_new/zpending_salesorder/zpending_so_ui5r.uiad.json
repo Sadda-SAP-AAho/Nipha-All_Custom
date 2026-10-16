@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "zpending_salesorder"
+  },
+  "ui5AppDetails": {
+    "appId": "zpendingsoreport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_0324B79106F744D96D9269EF42A42AB6C2B650BC_TM",
+    "semanticObject": "zpendsorep",
+    "action": "DISPLAY",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_0324B79106F744D96D9269EF42A42AB6C2B650BC_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "zpending_salesorder",
+        "subtitle": "Pending Sales Order Report"
+      }
+    }
+  ]
+}

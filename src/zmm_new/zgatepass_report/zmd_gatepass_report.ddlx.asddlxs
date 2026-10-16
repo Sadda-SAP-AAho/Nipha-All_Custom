@@ -1,0 +1,139 @@
+@Metadata.layer: #CORE
+@UI.selectionVariant: [{ qualifier: 'Pass', text: 'Gate Outward' }]
+annotate entity ZCDS_GATEPASS_REPORT with
+{
+  @UI.selectionField: [{ position: 10 }]
+  @EndUserText.label: 'Gate Pass'
+  @UI.lineItem: [ { position: 10 , label: 'Gate Pass Number'} ]
+  @UI.identification: [ {position: 10 ,label: 'Gate Pass Number'} ]
+  GateEntryNo;
+
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 20 , label: 'Line No'} ]
+  @UI.identification: [ {position: 20 ,label: 'Line No'} ]
+  pass_line_no;
+
+  @UI.selectionField: [{ position: 20 }]
+  @EndUserText.label: 'Plant'
+  @UI.lineItem: [ { position: 30 , label: 'Plant'} ]
+  @UI.identification: [ {position: 30 ,label: 'Plant'} ]
+  Plant;
+
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 40 , label: 'Gate Pass Type'} ]
+  @UI.identification: [ {position: 40 ,label: 'Gate Pass Type'} ]
+  type;
+
+  @UI.selectionField: [{ position: 30 }]
+  @EndUserText.label: 'Gate Date'
+  @UI.lineItem: [ { position: 50 , label: 'Gate Out Date'} ]
+  @UI.identification: [ {position: 50 ,label: 'Gate Out Date'} ]
+  GateOutDate;
+  
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 55 , label: 'Status'} ]
+  @UI.identification: [ {position: 55 ,label: 'Status'} ]
+  Status;
+
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 60 , label: 'Gate Out  Time'} ]
+  @UI.identification: [ {position: 60 ,label: 'Gate Out Time'} ]
+  out_time;
+
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 64 , label: 'Gate In Date'} ]
+  @UI.identification: [ {position: 64 ,label: 'Gate In Date'} ]
+  GateInDate;
+
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 68 , label: 'Gate Entry Time'} ]
+  @UI.identification: [ {position: 68 ,label: 'Gate Entry Time'} ]
+  GateEntryTime;
+
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 70 , label: 'Vehicle Number'} ]
+  @UI.identification: [ {position: 70 ,label: 'Vehicle Number'} ]
+  vehicle_number;
+  
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 75 , label: 'Cancelled'} ]
+  @UI.identification: [ {position: 75 ,label: 'Cancelled'} ]
+  cancelled;
+
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 80 , label: 'Supplier/CustomerCode'} ]
+  @UI.identification: [ {position: 80 ,label: 'Supplier/CustomerCode'} ]
+  Customer;
+
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 90 , label: 'PO No./SO No.'} ]
+  @UI.identification: [ {position: 90 ,label: 'PO No./SO No.'} ]
+  SalesDocument;
+
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 100 , label: 'Invoice No'} ]
+  @UI.identification: [ {position: 100 ,label: 'Invoice No'} ]
+  document_no;
+
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 110 , label: 'Jobber Challan Out'} ]
+  @UI.identification: [ {position: 110 ,label: 'Jobber Challan Out'} ]
+  jobber_challan;
+
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 120 , label: 'Challan Date'} ]
+  @UI.identification: [ {position: 120 ,label: 'Challan Date'} ]
+  challan_date;
+
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 130 , label: 'Material Code'} ]
+  @UI.identification: [ {position: 130 ,label: 'Material Code'} ]
+  Product;
+
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 140 , label: 'Mat.Description'} ]
+  @UI.identification: [ {position: 140 ,label: 'Mat.Description'} ]
+  BillingDocumentItemText;
+
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 150 , label: 'Invoice Qty'} ]
+  @UI.identification: [ {position: 150 ,label: 'Invoice Qty'} ]
+  quantity;
+
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 160 , label: 'UOM  '} ]
+  @UI.identification: [ {position: 160 ,label: 'UOM'} ]
+  BaseUnit;
+
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 170 , label: 'Driver Name'} ]
+  @UI.identification: [ {position: 170 ,label: 'Driver Name'} ]
+  driver_name;
+
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 173 , label: 'Driver Number'} ]
+  @UI.identification: [ {position: 170 ,label: 'Driver Number'} ]
+  driver_number;
+
+
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 177 , label: 'Transporter Name'} ]
+  @UI.identification: [ {position: 177 ,label: 'Transporter Name'} ]
+  transporter_name;
+
+
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 180 , label: 'Remark'} ]
+  @UI.identification: [ {position: 180 ,label: 'Remark'} ]
+  remarks;
+
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 181 , label: 'Duration Days'} ]
+  @UI.identification: [ {position: 181 ,label: 'Duration Days'} ]
+  duration_days;
+
+  @Consumption.filter.hidden: true
+  @UI.lineItem: [ { position: 182 , label: 'Duration Time'} ]
+  @UI.identification: [ {position: 182 ,label: 'Duration Time'} ]
+  duration_time;
+}

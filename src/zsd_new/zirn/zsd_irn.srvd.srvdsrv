@@ -1,0 +1,6 @@
+@EndUserText.label: 'Service Definition IRN'
+define service ZSD_IRN {
+  expose ZC_IRN           as IRN;
+  expose ZC_EWAYTRANSTYPE as EwayTransType;
+  expose zc_plantvh;
+}

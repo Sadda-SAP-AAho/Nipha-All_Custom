@@ -1,0 +1,82 @@
+managed implementation in class ZBP_I_DATABASETABLEFORMAN_S unique;
+strict;
+with draft;
+define behavior for ZI_DatabaseTableForMan_S alias DatabaseTableForAll
+draft table ZMNUFCTRESE_D_S
+with unmanaged save
+lock master total etag LastChangedAtMax
+authorization master( global )
+{
+  field ( readonly )
+   SingletonID;
+
+  field ( notrigger )
+   SingletonID,
+   LastChangedAtMax;
+
+
+  update;
+  internal create;
+  internal delete;
+
+  draft action ( features : instance ) Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+
+  association _DatabaseTableForMan { create ( features : instance ); with draft; }
+
+}
+
+define behavior for ZI_DatabaseTableForMan alias DatabaseTableForMan ##UNMAPPED_FIELD
+persistent table ZMNUFCTRESERMM
+draft table ZMNUFCTRESERM_D
+etag master LastChangedAt
+lock dependent by _DatabaseTableForAll
+authorization dependent by _DatabaseTableForAll
+{
+  field ( mandatory : create )
+   SerialNo;
+
+  field ( readonly )
+   SingletonID,
+   CreatedBy,
+   CreatedAt,
+   LastChangedBy,
+   LastChangedAt,
+   LocalLastChangedAt;
+
+  field ( readonly : update )
+   SerialNo;
+
+  field ( notrigger )
+   SingletonID,
+   CreatedBy,
+   CreatedAt,
+   LastChangedBy,
+   LastChangedAt,
+   LocalLastChangedAt;
+
+
+  update( features : global );
+  delete( features : global );
+
+  factory action ( features : instance ) Copy parameter ZD_CopyDatabaseTableForManP [1];
+
+  mapping for ZMNUFCTRESERMM
+  {
+    SerialNo = SERIAL_NO;
+    MaterialCode = MATERIAL_CODE;
+    Description = DESCRIPTION;
+    MfrSerialno = MFR_SERIALNO;
+    CreatedBy = CREATED_BY;
+    CreatedAt = CREATED_AT;
+    LastChangedBy = LAST_CHANGED_BY;
+    LastChangedAt = LAST_CHANGED_AT;
+    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+  }
+
+  association _DatabaseTableForAll { with draft; }
+
+}

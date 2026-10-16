@@ -1,0 +1,48 @@
+managed implementation in class ZBP_R_INTEGRATION_TAB000 unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_INTEGRATION_TAB000 alias ZrIntegrationTab000
+persistent table ZINTEGRATION_TAB
+extensible
+draft table ZINTGRTN_TB000_D
+etag master LastChangedAt
+lock master total etag LocalLastChangedAt
+authorization master( global )
+{
+  field ( mandatory : create )
+   Intgmodule;
+
+  field ( readonly )
+   CreatedBy,
+   CreatedAt,
+   LastChangedBy,
+   LastChangedAt,
+   LocalLastChangedAt;
+
+  field ( readonly : update )
+   Intgmodule;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZINTEGRATION_TAB corresponding extensible
+  {
+    Intgmodule = intgmodule;
+    Intgpath = intgpath;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LastChangedBy = last_changed_by;
+    LastChangedAt = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+
+}

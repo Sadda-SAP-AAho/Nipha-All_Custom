@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_DatabaseForBankDeta_S'
+define service ZUI_DATABASEFORBANKDETA {
+  expose ZI_DATABASEFORBANKDETA_S as DatabaseForBankDAll;
+  expose ZI_DATABASEFORBANKDETA as DatabaseForBankDeta;
+}

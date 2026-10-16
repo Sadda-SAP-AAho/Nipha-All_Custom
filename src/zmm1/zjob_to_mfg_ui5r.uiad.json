@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "ITC-04 JOB WORK TO MFG",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "ITC-04 JOB WORK TO MFG"
+  },
+  "ui5AppDetails": {
+    "appId": "itc40jobworktomfgnipha"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_E1C805A55BD17BFBF24F791D6256E8C027EEE48C_TM",
+    "semanticObject": "jobtomfg",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_E1C805A55BD17BFBF24F791D6256E8C027EEE48C_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ITC-04 JOB WORK TO MFG"
+      }
+    }
+  ]
+}

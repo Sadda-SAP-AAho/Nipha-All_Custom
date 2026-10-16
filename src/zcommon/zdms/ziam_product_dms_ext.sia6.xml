@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SIA6" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SIA6>
+    <MAIN_OBJECT>
+     <NAME>ZIAM_PRODUCT_DMS_EXT</NAME>
+     <TYPE>SIA6</TYPE>
+     <DESCRIPTION>iam app for Product dms</DESCRIPTION>
+     <RESPONSIBLE>CB9980000000</RESPONSIBLE>
+     <MASTER_LANGUAGE>EN</MASTER_LANGUAGE>
+     <MASTER_SYSTEM>XXC</MASTER_SYSTEM>
+     <PACKAGE_REF>
+      <PACKAGE_NAME>ZDMS</PACKAGE_NAME>
+     </PACKAGE_REF>
+     <ABAP_LANGU_VERSION>5</ABAP_LANGU_VERSION>
+    </MAIN_OBJECT>
+    <APP_ID>ZIAM_PRODUCT_DMS_EXT</APP_ID>
+    <APP_TYPE>EXT</APP_TYPE>
+    <ABAP_LANGUAGE_VERSION>5</ABAP_LANGUAGE_VERSION>
+    <UI_APP_ID>ZPRODUCTDMS_UI5R</UI_APP_ID>
+    <SERVICE>
+     <item>
+      <REL_NAME>ZHTTP_HNDLDOC</REL_NAME>
+      <REL_TYPE>HTTP</REL_TYPE>
+      <APP_ID>ZIAM_PRODUCT_DMS_EXT</APP_ID>
+      <SRVC_NAME>FEA756DE6201566B18D46707A7A74A</SRVC_NAME>
+      <SRVC_TYPE>HT</SRVC_TYPE>
+      <TEXT>HTTP SERVICE FOR HANDELLING DOC SRVC</TEXT>
+      <TYPE_TEXT>HTTP Service</TYPE_TEXT>
+     </item>
+     <item>
+      <REL_NAME>ZUI_DMS                            0001</REL_NAME>
+      <REL_TYPE>IWSV</REL_TYPE>
+      <APP_ID>ZIAM_PRODUCT_DMS_EXT</APP_ID>
+      <SRVC_NAME>C343681758B4F1E82183D9CA15EF6C</SRVC_NAME>
+      <SRVC_TYPE>HT</SRVC_TYPE>
+      <UIAD_SRC>ZPRODUCTDMS_UI5R</UIAD_SRC>
+      <TEXT>Service Binding FOR ZUI_DBMS</TEXT>
+      <TYPE_TEXT>OData V2</TYPE_TEXT>
+     </item>
+    </SERVICE>
+    <PUBLISH_STATUS>p</PUBLISH_STATUS>
+   </SIA6>
+  </asx:values>
+ </asx:abap>
+</abapGit>

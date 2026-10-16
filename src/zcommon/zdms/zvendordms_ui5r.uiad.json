@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Vendor DMS"
+  },
+  "ui5AppDetails": {
+    "appId": "zvendordms"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_98576FF77A2F7C2E10C73754B91D50F2014E3F70_TM",
+    "semanticObject": "zvendordms",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_98576FF77A2F7C2E10C73754B91D50F2014E3F70_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Vendor DMS",
+        "subtitle": "ZVENDMS"
+      }
+    }
+  ]
+}

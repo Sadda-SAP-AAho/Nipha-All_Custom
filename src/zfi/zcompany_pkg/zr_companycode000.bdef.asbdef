@@ -1,0 +1,57 @@
+managed implementation in class ZBP_R_COMPANYCODE000 unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_COMPANYCODE000 alias ZrCompanycode000
+persistent table ZCOMPANYCODE
+extensible
+draft table ZCMPANYCODE000_D
+etag master LastChangedAt
+lock master total etag LocalLastChangedAt
+authorization master( global )
+{
+  field ( mandatory : create )
+   CompanyCode;
+
+  field ( readonly )
+   CreatedBy,
+   CreatedAt,
+   LastChangedBy,
+   LastChangedAt,
+   LocalLastChangedAt;
+
+  field ( readonly : update )
+   CompanyCode;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZCOMPANYCODE corresponding extensible
+  {
+    CompanyCode = company_code;
+    CompanyName = company_name;
+    Address = address;
+    Cin = cin;
+    Pan = pan;
+    GstNo = gst_no;
+    Fssai = fssai;
+    RegNo = reg_no;
+    Remark1 = remark1;
+    Remark2 = remark2;
+    Remark3 = remark3;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LastChangedBy = last_changed_by;
+    LastChangedAt = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+
+}

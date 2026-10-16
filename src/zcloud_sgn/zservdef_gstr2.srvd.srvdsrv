@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition : For ZCDS_GSTR2_DDL2'
+define service Zservdef_gstr2 {
+  expose zcds_gstr2_ddl2;
+}

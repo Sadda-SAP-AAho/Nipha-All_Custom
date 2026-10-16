@@ -1,0 +1,45 @@
+managed implementation in class zbp_c_errolog unique;
+strict ( 2 );
+
+define behavior for ZC_ERROLOG //alias <alias_name>
+persistent table zpoc_errorlog
+etag master LastChangedAt
+lock master
+authorization master( global )
+{
+  field ( mandatory : create )
+   Plant,
+   Manufacturingorder,
+   Errortimestamp;
+
+  field ( readonly )
+   CreatedBy,
+   CreatedAt,
+   LastChangedBy,
+   LastChangedAt,
+   LocalLastChangedAt;
+
+  field ( readonly : update )
+   Plant,
+   Manufacturingorder,
+   Errortimestamp;
+
+
+  create;
+  update;
+  delete;
+
+  mapping for ZPOC_ERRORLOG corresponding
+  {
+    Plant = plant;
+    Manufacturingorder = manufacturingorder;
+    Errortimestamp = errortimestamp;
+    Yieldquantity = yieldquantity;
+    Errormessage = errormessage;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LastChangedBy = last_changed_by;
+    LastChangedAt = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+}

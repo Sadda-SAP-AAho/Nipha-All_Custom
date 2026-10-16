@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Definition for User Setup'
+define service ZUI_USERSETUP {
+  expose ZC_USER_HEADER  as UserHeader;
+  expose ZC_USER_ITEM000 as UserItem;
+}

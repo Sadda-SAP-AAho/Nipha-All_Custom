@@ -1,0 +1,5 @@
+@MappingRole: true
+define role ZI_DatabaseTableForMan {
+  grant select on ZI_DatabaseTableForMan
+  where ( ) = ASPECT pfcg_auth ( 'S_TABU_NAM', ACTVT = '03', TABLE = 'ZI_DATABASETABLEFORMAN' );
+}

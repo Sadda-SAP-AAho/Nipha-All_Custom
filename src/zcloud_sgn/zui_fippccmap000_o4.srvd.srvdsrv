@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for ZC_FIPPCCMAP000'
+define service ZUI_FIPPCCMAP000_O4 {
+  expose ZC_FIPPCCMAP000;
+}

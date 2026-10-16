@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "{{zcost_rpt1-zcost_rpt1.flpTitle}}",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "{{zcost_rpt1-zcost_rpt1.flpTitle}}"
+  },
+  "ui5AppDetails": {
+    "appId": "costreportnipha"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_69C39C409DCA6C0F01B69D7A13F97D9588B997E0_TM",
+    "semanticObject": "zcost_rpt1",
+    "action": "zcost_rpt1",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_69C39C409DCA6C0F01B69D7A13F97D9588B997E0_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "{{zcost_rpt1-zcost_rpt1.flpTitle}}",
+        "subtitle": "{{zcost_rpt1-zcost_rpt1.flpSubtitle}}"
+      }
+    }
+  ]
+}

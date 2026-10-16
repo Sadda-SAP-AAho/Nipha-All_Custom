@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for Activity Cost Report'
+define service ZCostrpt_DDl3_SD {
+  expose zcostrpt_ddl3;
+}

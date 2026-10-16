@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "ZjournalVoucher",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "ZjournalVoucher"
+  },
+  "ui5AppDetails": {
+    "appId": "zgeneralbankvoucher"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_A7C990207E81F17E0BEACD506FEA4A1D2F7F5368_TM",
+    "semanticObject": "zjournal",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_A7C990207E81F17E0BEACD506FEA4A1D2F7F5368_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ZjournalVoucher",
+        "subtitle": "zfi"
+      }
+    }
+  ]
+}

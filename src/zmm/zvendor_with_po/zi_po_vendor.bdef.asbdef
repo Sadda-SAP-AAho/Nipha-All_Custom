@@ -1,0 +1,14 @@
+managed implementation in class zbp_i_po_vendor unique;
+strict ( 2 );
+
+define behavior for ZI_PO_VENDOR //alias <alias_name>
+persistent table zpo_vendor
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+//  field ( readonly ) supplier;
+}

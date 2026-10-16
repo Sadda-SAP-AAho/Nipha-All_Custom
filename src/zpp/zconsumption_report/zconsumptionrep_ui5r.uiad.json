@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "ZCONSUMPTION Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "ZCONSUMPTION Report"
+  },
+  "ui5AppDetails": {
+    "appId": "consumptionrep.consumption"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_65BEB12E3A230B3634EB6359E96E9D4028171FC1_TM",
+    "semanticObject": "zconsumption",
+    "action": "consumpitonrep",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_65BEB12E3A230B3634EB6359E96E9D4028171FC1_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ZCONSUMPTION Report",
+        "subtitle": "ZCONSUMPTION Report"
+      }
+    }
+  ]
+}

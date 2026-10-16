@@ -1,0 +1,19 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Application job template for purchase register job",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "catalogName": "ZAPJCE_PUR_REG_NEW"
+  },
+  "parameters": {
+    "singleValueParameters": [
+      {
+        "name": "P_DESCR",
+        "value": ""
+      }
+    ]
+  }
+}

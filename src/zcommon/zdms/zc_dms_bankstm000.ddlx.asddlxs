@@ -1,0 +1,173 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'CompCode'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'CompCode'
+annotate view ZC_DMS_BANKSTM000 with
+{
+  @EndUserText.label: 'CompCode'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'Company Code'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'Company Code'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  CompCode;
+  
+  @EndUserText.label: 'Accounting Document'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'Accounting Document'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'Accounting Document'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  ActDoc;
+  
+  
+  @EndUserText.label: 'Fiscal year'
+  @UI.identification: [ {
+    position: 25 , 
+    label: 'Fiscal year'
+  } ]
+  @UI.lineItem: [ {
+    position: 25 , 
+    label: 'Fiscal year'
+  } ]
+  @UI.selectionField: [ {
+    position: 25 
+  } ]
+  Fiscalyear;
+  
+  @EndUserText.label: 'Accounting Document Header text'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Accounting Document Header text'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Accounting Document Header text'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  HeaderText;
+  
+  @EndUserText.label: 'Accounting Document Type'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Accounting Document Type'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Accounting Document Type'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  ActDocType;
+  
+
+  @UI.lineItem: [{  position: 41}]
+  @EndUserText.label: 'Attachment Count'
+  DocCount;
+  
+  @EndUserText.label: 'Posting Date'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'Posting Date'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'Posting Date'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  PostDate;
+  
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  ChangedBy;
+  
+  @UI.identification: [ {
+    position: 100 
+  } ]
+  @UI.lineItem: [ {
+    position: 100 
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  ChangedAt;
+  
+  @UI.identification: [ {
+    position: 110 
+  } ]
+  @UI.lineItem: [ {
+    position: 110 
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  LocalChangedAt;
+  
+  @EndUserText.label: '_BaseEntity'
+  @UI.identification: [ {
+    position: 120 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.lineItem: [ {
+    position: 120 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  _baseentity;
+}

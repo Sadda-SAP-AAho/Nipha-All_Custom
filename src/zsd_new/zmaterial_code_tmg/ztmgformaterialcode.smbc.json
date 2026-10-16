@@ -1,0 +1,36 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "TMG For Material Code",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "serviceConfiguration": {
+    "serviceBinding": "ZUI_TMGFORMATERIALCODE_O4",
+    "serviceName": "ZUI_TMGFORMATERIALCODE_O4",
+    "serviceVersion": "0001",
+    "rootEntitySet": "TmgForMaterialCoAll",
+    "name": "TMG For Material Code",
+    "transportObject": "ZTMGFORMATERIALCODET",
+    "configurationGroup": "",
+    "skipRootEntity": true
+  },
+  "appConfiguration": {
+    "listReport": {},
+    "objectPages": [
+      {
+        "entitySet": "TmgForMaterialCoAll",
+        "variantManagement": "control"
+      }
+    ],
+    "tableSettings": [
+      {
+        "entitySet": "TmgForMaterialCode",
+        "tableType": "gridTable",
+        "selectAll": true,
+        "rowCountMode": "auto",
+        "frozenColumnCount": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "ZPRDCOST REPORT",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "ZPRDCOST REPORT"
+  },
+  "ui5AppDetails": {
+    "appId": "productioncost.productioncostrep"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_2F8EE435B1BD3E6027BC95CF59AA728AFECF8434_TM",
+    "semanticObject": "ZPRDCOSTREP",
+    "action": "PRDCOSTREP",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_2F8EE435B1BD3E6027BC95CF59AA728AFECF8434_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ZPRDCOST REPORT",
+        "subtitle": "ZPRDCOST REPORT"
+      }
+    }
+  ]
+}

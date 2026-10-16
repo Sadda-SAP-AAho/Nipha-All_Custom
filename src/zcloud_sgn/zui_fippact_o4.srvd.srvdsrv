@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for ZC_FIPPACT'
+define service ZUI_FIPPACT_O4 {
+  expose ZC_FIPPACT;
+}

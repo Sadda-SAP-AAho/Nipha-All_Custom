@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "ZCOMPANY"
+  },
+  "ui5AppDetails": {
+    "appId": "zcompany"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_DB798E397625342B6B42293BDB7C3881AB63CF5C_TM",
+    "semanticObject": "z_company_f1",
+    "action": "LIST",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_DB798E397625342B6B42293BDB7C3881AB63CF5C_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ZCOMPANY",
+        "subtitle": "zcompany"
+      }
+    }
+  ]
+}

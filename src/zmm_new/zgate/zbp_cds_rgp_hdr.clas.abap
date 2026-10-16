@@ -1,0 +1,9 @@
+CLASS zbp_cds_rgp_hdr DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zcds_rgp_hdr.
+protected section.
+private section.
+ENDCLASS.
+
+
+
+CLASS ZBP_CDS_RGP_HDR IMPLEMENTATION.
+ENDCLASS.

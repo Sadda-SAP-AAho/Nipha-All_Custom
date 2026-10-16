@@ -1,0 +1,97 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'DatabaseTableForMan', 
+    typeNamePlural: 'DatabaseTableForMans', 
+    title: {
+      type: #STANDARD, 
+      label: 'DATABASE TABLE FOR MANUFACTURE SERIES PP', 
+      value: 'Serialno'
+    }
+  }
+}
+annotate view ZI_DatabaseTableForManPP with
+{
+  @UI.identification: [ {
+    position: 1 ,
+    label: 'Serial No.'
+  } ]
+  @UI.lineItem: [ {
+    position: 1,
+    label: 'Serial No.' 
+  }, 
+  {
+    type: #FOR_ACTION, 
+    dataAction: 'Copy', 
+    label: 'Copy Selected Entry', 
+    invocationGrouping: #CHANGE_SET
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_DatabaseTableForManPP', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'DATABASE TABLE FOR MANUFACTURE SERIES PP', 
+    position: 1 
+  } ]
+  Serialno;
+  
+  @UI.identification: [ {
+    position: 2 , 
+    label: 'Place'
+  } ]
+  @UI.lineItem: [ {
+    position: 2 , 
+    label: 'Place'
+  } ]
+  Place;
+  
+  @UI.identification: [ {
+    position: 3 , 
+    label: 'Model'
+  } ]
+  @UI.lineItem: [ {
+    position: 3 , 
+    label: 'Model'
+  } ]
+  Model;
+  
+  @UI.identification: [ {
+    position: 4 , 
+    label: 'Make'
+  } ]
+  @UI.lineItem: [ {
+    position: 4 , 
+    label: 'Make'
+  } ]
+  Make;
+  
+  @UI.identification: [ {
+    position: 5 , 
+    label: 'Year'
+  } ]
+  @UI.lineItem: [ {
+    position: 5 , 
+    label: 'Year'
+  } ]
+  Yers;
+  
+  @UI.identification: [ {
+    position: 6 , 
+    label: 'Machine No'
+  } ]
+  @UI.lineItem: [ {
+    position: 6 , 
+    label: 'Machine No'
+  } ]
+  Machineno;
+  
+  @UI.identification: [ {
+    position: 7 , 
+    label: 'State'
+  } ]
+  @UI.lineItem: [ {
+    position: 7 , 
+    label: 'State'
+  } ]
+  State;
+}

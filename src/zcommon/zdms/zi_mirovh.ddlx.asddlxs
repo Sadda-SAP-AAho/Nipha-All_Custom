@@ -1,0 +1,67 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'SupplierInvoice'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'SupplierInvoice'
+
+annotate entity ZI_MIROVH
+    with
+{
+
+  @EndUserText.label: 'Supplier Invoice'
+  @UI.lineItem: [{ position: 10 }]
+  @UI.identification: [{ position: 10 }]
+  @UI.selectionField: [{ position: 10 }]
+  SupplierInvoice;
+
+  @EndUserText.label: 'Fiscal Year'
+  @UI.lineItem: [{ position: 20 }]
+  @UI.identification: [{ position: 20 }]
+  @UI.selectionField: [{ position: 20 }]
+  FiscalYear;
+
+  @EndUserText.label: 'Company Code'
+  @UI.lineItem: [{ position: 30 }]
+  @UI.identification: [{ position: 30 }]
+  @UI.selectionField: [{ position: 30 }]
+  CompanyCode;
+
+  @EndUserText.label: 'Document Date'
+  @UI.lineItem: [{ position: 40 }]
+  @UI.identification: [{ position: 40 }]
+  DocumentDate;
+
+  @EndUserText.label: 'Invoicing Party'
+  @UI.lineItem: [{ position: 50 }]
+  @UI.identification: [{ position: 50 }]
+  @UI.selectionField: [{ position: 40 }]
+  InvoicingParty;
+
+  @EndUserText.label: 'Supplier Name'
+  @UI.lineItem: [{ position: 60 }]
+  @UI.identification: [{ position: 60 }]
+  SupplierName;
+  
+  @UI.selectionField: [{ position: 61 }]
+  @UI.lineItem: [{ position: 61, label: 'Supplier Type' }]
+  BusinessPartnerType;
+
+  @EndUserText.label: 'Posting Date'
+  @UI.lineItem: [{ position: 70 }]
+  @UI.identification: [{ position: 70 }]
+  PostingDate;
+  
+  @UI.lineItem: [{ position: 80 }]
+  @UI.identification: [{ position: 80 }]
+  @UI.selectionField: [{ position: 80 }]
+  @EndUserText.label: 'Attachment Count'
+  DocCount;
+
+  @EndUserText.label: 'CreatedBy User'
+  @UI.lineItem: [{ position: 90 }]
+  @UI.identification: [{ position: 90 }]
+  CreatedByUser;
+
+
+
+}

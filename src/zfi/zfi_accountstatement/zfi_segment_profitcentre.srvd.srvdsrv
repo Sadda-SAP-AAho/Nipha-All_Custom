@@ -1,0 +1,4 @@
+@EndUserText.label: 'ZFI_SEGMENT_PROFITCENTRE'
+define service ZFI_SEGMENT_PROFITCENTRE {
+  expose ZFI_SEGPRO;
+}

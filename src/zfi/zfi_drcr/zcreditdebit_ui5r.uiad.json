@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Supplier MIRO-Print",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Supplier MIRO-Print"
+  },
+  "ui5AppDetails": {
+    "appId": "DebitCreditNote.zcreditdebitnote"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_69595319480738D6341DB2B5635AE75C00329518_TM",
+    "semanticObject": "zcreditdebit",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_69595319480738D6341DB2B5635AE75C00329518_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Supplier MIRO-Print"
+      }
+    }
+  ]
+}

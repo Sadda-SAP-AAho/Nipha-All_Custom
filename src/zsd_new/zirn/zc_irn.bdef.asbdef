@@ -1,0 +1,12 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_IRN alias ZcIrn
+use etag
+{
+
+  use update;
+  use action generateData;
+
+
+}

@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Sales Register",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Sales Register"
+  },
+  "ui5AppDetails": {
+    "appId": "salesreg.salesreg"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_B7C8225D2DB9BFCE63421CC235081297622FB8B2_TM",
+    "semanticObject": "zsalesreg",
+    "action": "zsalesreg",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_B7C8225D2DB9BFCE63421CC235081297622FB8B2_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Sales Register",
+        "subtitle": "Sales Register"
+      }
+    }
+  ]
+}

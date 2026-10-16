@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "zgrn_register"
+  },
+  "ui5AppDetails": {
+    "appId": "zmmgrnreg"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_14E137ACD4E9F3D05FB0DDB9DB5B739903C9049A_TM",
+    "semanticObject": "zmm_grn_register",
+    "action": "DISPLAY",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_14E137ACD4E9F3D05FB0DDB9DB5B739903C9049A_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "zgrn_register",
+        "subtitle": "GRN Register"
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+@Metadata.layer: #PARTNER
+@UI:{ 
+       headerInfo:{ 
+                typeName: 'Maintain User,CostCenter,ProfitCenter',
+                typeNamePlural: 'Maintain User,CostCenter,ProfitCenter',
+                title:{ 
+                type: #STANDARD,
+                label: 'Maintain User,CostCenter,ProfitCenter',
+                value: 'UserName'
+                  }
+       }
+}
+
+annotate view ZC_USER_PROFIT
+    with 
+{
+@UI.facet: [{ id: 'UserName',
+             purpose: #STANDARD,
+             type: #IDENTIFICATION_REFERENCE,
+             label: 'Maintain User,CostCenter,ProfitCenter',
+             position: 10
+ }]
+  @UI: { lineItem: [{ position: 10 , label: 'User Name'}],
+   identification: [{ position: 10 , label: 'User Name'}] } 
+      UserName;
+        @UI: { lineItem: [{ position: 20 , label: 'Plant' }], 
+  identification: [{ position: 20 , label: 'Plant'}] } 
+  @Consumption.valueHelpDefinition: [{ entity: {name: 'ZVH_PLANT', element: 'Plant'} }]
+     Plant;
+           @UI: { lineItem: [{ position: 30 , label: 'Profit Center' }], 
+  identification: [{ position: 30 , label: 'Profit Center'}] } 
+  @Consumption.valueHelpDefinition: [{ entity: {name: 'ZVH_Profitcenter', element: 'ProfitCenter'} }]
+    ProfitCenter;
+       @UI: { lineItem: [{ position: 40 , label: 'GLAccount' }], 
+  identification: [{ position: 40 , label: 'GLAccount'}] } 
+  @Consumption.valueHelpDefinition: [{ entity: {name: 'ZVH_GLACCOUNT', element: 'GLAccount'} }]
+   GLAccount;
+     @UI: { lineItem: [{ position: 50 , label: 'Cost Center' }], 
+  identification: [{ position: 50 , label: 'Cost Center'}] } 
+   @Consumption.valueHelpDefinition: [{ entity: {name: 'ZVH_COSTCENTER', element: 'CostCenter'} }]
+    CostCenter;
+
+    
+}

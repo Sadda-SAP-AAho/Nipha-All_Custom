@@ -1,0 +1,229 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'DocUUID'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'DocUUID'
+annotate view ZC_DMS with
+{
+  @EndUserText.label: 'DocUUID'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 
+  } ]
+  @UI.lineItem: [ {
+    position: 10 
+  } ]
+  DocUUID;
+  
+  @EndUserText.label: 'DocNumber'
+  @UI.identification: [ {
+    position: 20 
+  } ]
+  @UI.lineItem: [ {
+    position: 20 
+  } ]
+  DocNumber;
+  
+  @EndUserText.label: 'DocType'
+  @Consumption.valueHelpDefinition: [{ entity:{ name: 'ZI_DOCTYPE_VH', element: 'Value' } }]
+  @UI.identification: [ {
+    position: 30 
+  } ]
+  @UI.lineItem: [ {
+    position: 30 
+  } ]
+  DocType;
+  
+  @EndUserText.label: 'DocVersion'
+  @UI.identification: [ {
+    position: 40 
+  } ]
+  @UI.lineItem: [ {
+    position: 40 
+  } ]
+  DocVersion;
+  
+  @EndUserText.label: 'Title'
+  @UI.identification: [ {
+    position: 50 
+  } ]
+  @UI.lineItem: [ {
+    position: 50 
+  } ]
+  Title;
+  
+  @EndUserText.label: 'Description'
+  @UI.identification: [ {
+    position: 60 
+  } ]
+  @UI.lineItem: [ {
+    position: 60 
+  } ]
+  Description;
+  
+  @EndUserText.label: 'Status'
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  Status;
+  
+  @EndUserText.label: 'Priority'
+  @Consumption.valueHelpDefinition: [{ entity:{ name: 'ZI_PRIORITY_VH', element: 'Value' } }]
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+  Priority;
+  
+  @EndUserText.label: 'Category'
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  Category;
+  
+  @EndUserText.label: 'Tags'
+  @UI.identification: [ {
+    position: 100
+  } ]
+  @UI.lineItem: [ {
+    position: 100
+  } ]
+  Tags;
+  
+  @EndUserText.label: 'Reference Object Type'
+  @UI.identification: [ {
+    position: 110 
+  } ]
+  @UI.lineItem: [ {
+    position: 110 
+  } ]
+  @Consumption.valueHelpDefinition: [{ entity:{ name: 'ZI_ENTITYTYPE_VH', element: 'Value' } }]
+  RefObjectType;
+  
+  @EndUserText.label: 'Reference Object Key'
+  @UI.identification: [ {
+    position: 120 
+  } ]
+  @UI.lineItem: [ {
+    position: 120 
+  } ]
+  RefObjectKey;
+  
+  @EndUserText.label: 'Owner'
+  @UI.identification: [ {
+    position: 130 
+  } ]
+  @UI.lineItem: [ {
+    position: 130 
+  } ]
+  Owner;
+  
+  @EndUserText.label: 'Due Date'
+  @UI.identification: [ {
+    position: 140 
+  } ]
+  @UI.lineItem: [ {
+    position: 140 
+  } ]
+  DueDate;
+  
+  @EndUserText.label: 'Is Confidential'
+  @UI.identification: [ {
+    position: 150 
+  } ]
+  @UI.lineItem: [ {
+    position: 150 
+  } ]
+  IsConfidential;
+  
+  @UI.identification: [ {
+    position: 160 
+  } ]
+  @UI.lineItem: [ {
+    position: 160 
+  } ]
+  @EndUserText.label: 'Reviewed By'
+  ReviewedBy;
+  
+  @UI.identification: [ {
+    position: 170 
+  } ]
+  @UI.lineItem: [ {
+    position: 170 
+  } ]
+  @EndUserText.label: 'Reviewed At'
+  ReviewedAt;
+  
+  @UI.identification: [ {
+    position: 180
+  } ]
+  @UI.lineItem: [ {
+    position: 180 
+  } ]
+  @EndUserText.label: 'Approved By'
+  ApprovedBy;
+  
+  @UI.identification: [ {
+    position: 190 
+  } ]
+  @UI.lineItem: [ {
+    position: 190 
+  } ]
+  @EndUserText.label: 'Approved At'
+  ApprovedAt;
+  
+  @UI.identification: [ {
+    position: 200 
+  } ]
+  @UI.lineItem: [ {
+    position: 200 
+  } ]
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 210 
+  } ]
+  @UI.lineItem: [ {
+    position: 210 
+  } ]
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 220 
+  } ]
+  @UI.lineItem: [ {
+    position: 220 
+  } ]
+  ChangedBy;
+  
+  @UI.identification: [ {
+    position: 230 
+  } ]
+  @UI.lineItem: [ {
+    position: 230 
+  } ]
+  ChangedAt;
+  
+  @UI.identification: [ {
+    position: 240 
+  } ]
+  @UI.lineItem: [ {
+    position: 240 
+  } ]
+  LocalChangedAt;
+  
+}

@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "PO Date Vendor Validation",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "PO Date Vendor Validation"
+  },
+  "ui5AppDetails": {
+    "appId": "zpovendor"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_C1D557636A9543BA832601AF48E54257BC4B5BB4_TM",
+    "semanticObject": "ZPODV",
+    "action": "ZPODV",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_C1D557636A9543BA832601AF48E54257BC4B5BB4_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "PO Date Vendor Validation"
+      }
+    }
+  ]
+}

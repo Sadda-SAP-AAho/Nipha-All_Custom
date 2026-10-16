@@ -1,0 +1,162 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'TmgForMaterialCode',
+    typeNamePlural: 'TmgForMaterialCodes',
+    title: {
+      type: #STANDARD,
+      label: 'TMG For Material Code',
+      value: 'MaterialCode'
+    }
+  }
+}
+annotate view ZI_TmgForMaterialCode with
+{
+  @UI.identification: [ {
+    position: 1
+  } ]
+  @UI.lineItem: [ {
+    position: 1
+  },
+  {
+    type: #FOR_ACTION,
+    dataAction: 'Copy',
+    label: 'Copy Selected Entry',
+    invocationGrouping: #CHANGE_SET
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_TmgForMaterialCode',
+    purpose: #STANDARD,
+    type: #IDENTIFICATION_REFERENCE,
+    label: 'Material Code',
+    position: 1
+  } ]
+  @EndUserText.label: 'Material Code'
+  @Consumption.valueHelpDefinition: [ {
+    entity: {
+      name: 'ZI_ProductVH',
+      element: 'Product'
+    }
+  } ]
+  MaterialCode;
+
+  @UI.identification: [ {
+    position: 2 ,
+    label: 'Material Description'
+  } ]
+  @UI.lineItem: [ {
+    position: 2 ,
+    label: 'Material Description'
+  } ]
+  MaterialDesc;
+
+  @UI.identification: [ {
+    position: 3 ,
+    label: 'Division Attribute 1'
+  } ]
+  @UI.lineItem: [ {
+    position: 3 ,
+    label: 'Division Attribute 1'
+  } ]
+  DivisionAttr1;
+
+  @UI.identification: [ {
+    position: 4 ,
+    label: 'Division Attribute 2'
+  } ]
+  @UI.lineItem: [ {
+    position: 4 ,
+    label: 'Division Attribute 2'
+  } ]
+  DivisionAttr2;
+
+  @UI.identification: [ {
+    position: 5 ,
+    label: 'Division Attribute 3'
+  } ]
+  @UI.lineItem: [ {
+    position: 5 ,
+    label: 'Division Attribute 3'
+  } ]
+  DivisionAttr3;
+
+  @UI.identification: [ {
+    position: 6 ,
+    label: 'Product Family Code'
+  } ]
+  @UI.lineItem: [ {
+    position: 6 ,
+    label: 'Product Family Code'
+  } ]
+  ProductFamilyCode;
+
+  @UI.identification: [ {
+    position: 7 ,
+    label: 'Model Name'
+  } ]
+  @UI.lineItem: [ {
+    position: 7 ,
+    label: 'Model Name'
+  } ]
+  ModelName;
+
+  @UI.identification: [ {
+    position: 8 ,
+    label: 'Side Transmission Type'
+  } ]
+  @UI.lineItem: [ {
+    position: 8 ,
+    label: 'Side Transmission Type'
+  } ]
+  SideTransmissionType;
+
+  @UI.identification: [ {
+    position: 9 ,
+    label: 'Machine Size'
+  } ]
+  @UI.lineItem: [ {
+    position: 9 ,
+    label: 'Machine Size'
+  } ]
+  MachineSize;
+
+  @UI.identification: [ {
+    position: 10 ,
+    label: 'Change Gear'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 ,
+    label: 'Change Gear'
+  } ]
+  ChangeGear;
+
+  @UI.identification: [ {
+    position: 11 ,
+    label: 'Blade Type'
+  } ]
+  @UI.lineItem: [ {
+    position: 11 ,
+    label: 'Blade Type'
+  } ]
+  BladeType;
+
+  @UI.identification: [ {
+    position: 12 ,
+    label: 'No Of Blades'
+  } ]
+  @UI.lineItem: [ {
+    position: 12 ,
+    label: 'No Of Blades'
+  } ]
+  NoOfBlades;
+
+  @UI.identification: [ {
+    position: 13 ,
+    label: 'Gear Box Type'
+  } ]
+  @UI.lineItem: [ {
+    position: 13 ,
+    label: 'Gear Box Type'
+  } ]
+  GearBoxType;
+}

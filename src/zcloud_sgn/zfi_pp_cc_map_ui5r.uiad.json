@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "FI PP CC Map",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "FI PP CC Map"
+  },
+  "ui5AppDetails": {
+    "appId": "fippccmapnipha"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_60A837877355F5B6984DAB4A65DE6BE5E17CD7D6_TM",
+    "semanticObject": "fippccmap",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_60A837877355F5B6984DAB4A65DE6BE5E17CD7D6_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "FI PP CC Map"
+      }
+    }
+  ]
+}

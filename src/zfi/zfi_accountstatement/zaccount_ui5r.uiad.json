@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Account Statement",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Account Statement"
+  },
+  "ui5AppDetails": {
+    "appId": "zaccountstatement"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_CA5195B9C8F0F7B4A1DCC64DF5002FD6182DC67A_TM",
+    "semanticObject": "zaccount",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_CA5195B9C8F0F7B4A1DCC64DF5002FD6182DC67A_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Account Statement",
+        "subtitle": "FI"
+      }
+    }
+  ]
+}

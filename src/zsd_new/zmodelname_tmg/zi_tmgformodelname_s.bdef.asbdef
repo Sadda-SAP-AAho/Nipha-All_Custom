@@ -1,0 +1,67 @@
+managed with additional save implementation in class ZBP_I_TMGFORMODELNAME_S unique;
+strict;
+with draft;
+define behavior for ZI_TmgForModelName_S alias TmgForModelNameAll
+draft table ZDT_MODELNA_D_S
+with unmanaged save
+lock master total etag LastChangedAtMax
+authorization master( global )
+{
+  field ( readonly )
+   SingletonID;
+
+  field ( notrigger )
+   SingletonID,
+   LastChangedAtMax;
+
+
+  update;
+  internal create;
+  internal delete;
+
+  draft action ( features : instance ) Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+
+  association _TmgForModelName { create ( features : instance ); with draft; }
+
+}
+
+define behavior for ZI_TmgForModelName alias TmgForModelName ##UNMAPPED_FIELD
+persistent table ZDT_MODELNAME
+draft table ZDT_MODELNAME_D
+lock dependent by _TmgForModelNameAll
+authorization dependent by _TmgForModelNameAll
+{
+  field ( mandatory : create )
+   Code,
+   Language;
+
+  field ( readonly )
+   SingletonID;
+
+  field ( readonly : update )
+   Code,
+   Language;
+
+  field ( notrigger )
+   SingletonID;
+
+
+  update( features : global );
+  delete( features : global );
+
+  factory action ( features : instance ) Copy parameter ZD_CopyTmgForModelNameP [1];
+
+  mapping for ZDT_MODELNAME
+  {
+    Code = CODE;
+    Language = LANGUAGE;
+    Description = DESCRIPTION;
+  }
+
+  association _TmgForModelNameAll { with draft; }
+
+}

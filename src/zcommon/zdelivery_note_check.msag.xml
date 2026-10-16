@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZDELIVERY_NOTE_CHECK</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Message class for delivery note check</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZDELIVERY_NOTE_CHECK</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Invoice Number already used for MIGO Number &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZDELIVERY_NOTE_CHECK</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Cost not released for product</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,40 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Maintain DATABASE FOR BANK DETAILS",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "serviceConfiguration": {
+    "serviceBinding": "ZUI_DATABASEFORBANKDETA_O4",
+    "serviceName": "ZUI_DATABASEFORBANKDETA_O4",
+    "serviceVersion": "0001",
+    "rootEntitySet": "DatabaseForBankDAll",
+    "name": "DATABASE FOR BANK DETAILS",
+    "transportObject": "ZDATABASEFORBANKDETAT",
+    "configurationGroup": "",
+    "skipRootEntity": true
+  },
+  "appConfiguration": {
+    "listReport": {},
+    "objectPages": [
+      {
+        "entitySet": "DatabaseForBankDAll",
+        "variantManagement": "control"
+      }
+    ],
+    "tableSettings": [
+      {
+        "entitySet": "DatabaseForBankDeta",
+        "tableType": "gridTable",
+        "selectionMode": "single",
+        "selectAll": true,
+        "rowCountMode": "auto",
+        "frozenColumnCount": 2,
+        "creationModeName": "inlineCreationRows",
+        "createAtEnd": true,
+        "widthIncludingColumnHeader": true
+      }
+    ]
+  }
+}

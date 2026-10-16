@@ -1,0 +1,4 @@
+@EndUserText.label: 'Sales Reg Def'
+define service ZSALES_REG_SD {
+  expose ZSALES_REG_FINAL;
+}

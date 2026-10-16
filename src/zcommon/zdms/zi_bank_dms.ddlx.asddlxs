@@ -1,0 +1,35 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'ActDoc'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'ActDoc'
+annotate entity ZI_BANKSTM_DMS
+    with 
+{
+   @UI.lineItem: [{  position: 10}]
+  @UI.identification: [{ position: 10 }]
+  @UI.selectionField: [{ position: 10 }]
+  CompCode;
+  
+  @UI.lineItem: [{  position: 20}]
+  @UI.identification: [{ position: 20 }]
+  @UI.selectionField: [{ position: 20 }]
+  ActDoc;
+  
+  @UI.lineItem: [{  position: 25}]
+  @UI.identification: [{ position: 25 }]
+  @UI.selectionField: [{ position: 25 }]
+  Fiscalyear;
+
+    @UI.lineItem: [{  position: 30}]
+  @UI.identification: [{ position: 30 }]
+  @UI.selectionField: [{ position: 30 }]
+  ActDocType;
+
+  @UI.lineItem: [{  position: 40}]
+  @UI.identification: [{ position: 40 }]
+  @UI.selectionField: [{ position: 40 }]
+  PostDate;
+
+   
+}

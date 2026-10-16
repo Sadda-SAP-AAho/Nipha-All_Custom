@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Production Order Confirmation"
+  },
+  "ui5AppDetails": {
+    "appId": "zpoc"
+  },
+  "navigation": {
+    "targetMappingId": "Z_POC_UI5R_TM",
+    "semanticObject": "zpoc_gu",
+    "action": "DISPLAY",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "Z_POC_UI5R_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Production Order Confirmation",
+        "subtitle": "ZPOC"
+      }
+    }
+  ]
+}

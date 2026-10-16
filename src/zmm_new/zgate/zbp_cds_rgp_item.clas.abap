@@ -1,0 +1,9 @@
+CLASS zbp_cds_rgp_item DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zcds_rgp_item.
+protected section.
+private section.
+ENDCLASS.
+
+
+
+CLASS ZBP_CDS_RGP_ITEM IMPLEMENTATION.
+ENDCLASS.

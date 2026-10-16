@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Activity Cost Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Activity Cost Report"
+  },
+  "ui5AppDetails": {
+    "appId": "zcrupdated"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_D7D8BD0D34D075000977EC5632F83C77F3482372_TM",
+    "semanticObject": "ZACRU",
+    "action": "ZACRU",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_D7D8BD0D34D075000977EC5632F83C77F3482372_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Activity Cost Report",
+        "subtitle": "Activity cost report"
+      }
+    }
+  ]
+}

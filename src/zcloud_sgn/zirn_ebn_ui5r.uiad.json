@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "IRN/EBN",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "IRN/EBN"
+  },
+  "ui5AppDetails": {
+    "appId": "irnern"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_E502E2D6FC8896CC0CA33FB7793A9E5375F72687_TM",
+    "semanticObject": "irnebn",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_E502E2D6FC8896CC0CA33FB7793A9E5375F72687_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "IRN/EBN"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "GSTR1 Detail Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "GSTR1 Detail Report"
+  },
+  "ui5AppDetails": {
+    "appId": "gstr1detailreportnipha"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_E620A0E91B1CBED5587971430B110E8BEB3ECE26_TM",
+    "semanticObject": "gstr1dtrpt",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_E620A0E91B1CBED5587971430B110E8BEB3ECE26_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "GSTR1 Detail Report"
+      }
+    }
+  ]
+}

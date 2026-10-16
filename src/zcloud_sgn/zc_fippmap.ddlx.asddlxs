@@ -1,0 +1,128 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    typeName: 'ZC_FIPPMAP', 
+    typeNamePlural: 'ZC_FIPPMAPs'
+  }
+}
+annotate view ZC_FIPPMAP with
+{
+  @UI.facet: [ {
+    id: 'idIdentification', 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'ZC_FIPPMAP', 
+    position: 10 
+  } ]
+  @UI.hidden: true
+  UUID;
+  
+  @UI.lineItem: [ {
+    position: 10 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 10 
+  } ]
+  //Added
+  @Consumption.valueHelpDefinition: [{ entity:
+  {name: 'ZCDS_FICC_SH' , element: 'CostCenter' },
+   distinctValues: true
+  }]
+  //Added
+  Commcc1;
+  
+  @UI.lineItem: [ {
+    position: 20 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 20 
+  } ]
+  //Added
+  @Consumption.valueHelpDefinition: [{ entity:
+  {name: 'ZCDS_FICC_SH' , element: 'CostCenter' },
+   distinctValues: true
+  }]
+  //Added
+  Commcc2;
+  
+  @UI.lineItem: [ {
+    position: 30 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 30 
+  } ]
+  //Added
+  @Consumption.valueHelpDefinition: [{ entity:
+  {name: 'ZCDS_FICC_SH' , element: 'CostCenter' },
+   distinctValues: true
+  }]
+  //Added
+  Deptcc;
+  
+  @UI.lineItem: [ {
+    position: 40 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 40 
+  } ]
+  //Added
+  @Consumption.valueHelpDefinition: [{ entity:
+  {name: 'ZCDS_PPCC_SH' , element: 'CostCenter' },
+   distinctValues: true
+  }]
+  //Added
+  Prdcc;
+  
+  @UI.lineItem: [ {
+    position: 50 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 50 
+  } ]
+  //Added
+  @Consumption.valueHelpDefinition: [{ entity:
+  {name: 'ZCDS_FICC_SH' , element: 'GLAccount' },
+   distinctValues: true
+  }]
+  //Added
+  Gl;
+  
+  @UI.lineItem: [ {
+    position: 60 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 60 
+  } ]
+  //Added
+  @Consumption.valueHelpDefinition: [{ entity:
+  {name: 'ZCDS_PPCC_SH' , element: 'CostCtrActivityType' },
+   distinctValues: true
+  }]
+  //Added
+  ActType;
+  
+  @UI.lineItem: [ {
+    position: 70 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  //Added
+  @Consumption.valueHelpDefinition: [{ entity:
+  {name: 'ZI_READ_DOMAIN' , element: 'Value' },
+   //additionalBinding: [{parameter: 'ZDO_CH4'}],
+   distinctValues: true
+  }]
+  //@UI.hidden: true
+  //Added
+  ActCat;
+  
+  @UI.hidden: true
+  LocalLastChangedAt;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition for Delivery Challan'
+define service ZSD_DELIVERY_CHALLAN {
+  expose ZDD_DELIVERY_CHALLAN;
+}

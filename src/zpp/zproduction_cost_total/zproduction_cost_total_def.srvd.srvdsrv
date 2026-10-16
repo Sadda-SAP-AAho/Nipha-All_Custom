@@ -1,0 +1,4 @@
+@EndUserText.label: 'ZPRODUCTION_COST_TOTAL_DEF'
+define service ZPRODUCTION_COST_TOTAL_DEF {
+  expose ZPRODUCTION_REPORT_UI;
+}

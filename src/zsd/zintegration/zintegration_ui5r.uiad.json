@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Integration Table"
+  },
+  "ui5AppDetails": {
+    "appId": "zintegration"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_E4D0D8D7952DC0CAEC82D997C9BA74BAC8E7B3FD_TM",
+    "semanticObject": "zintegration_dev2",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_E4D0D8D7952DC0CAEC82D997C9BA74BAC8E7B3FD_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Integration Table",
+        "subtitle": "zintegration"
+      }
+    }
+  ]
+}

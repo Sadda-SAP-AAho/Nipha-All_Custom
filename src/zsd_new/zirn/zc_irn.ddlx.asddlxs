@@ -1,0 +1,561 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'Billingdocument'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'Billingdocument'
+annotate view ZC_IRN with
+{
+  @UI.facet: [ {
+    label: 'General Information',
+    id: 'GeneralInfo',
+    purpose: #STANDARD,
+    position: 10 ,
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @EndUserText.label: 'Document Number'
+  @UI.identification: [ {
+    position: 10
+  } ]
+  @UI.lineItem: [ {
+    position: 10
+  },{ type : #FOR_ACTION, dataAction: 'generateData',label: 'Generate Data' } ]
+  @UI.selectionField: [ {
+    position: 10
+  } ]
+  BillingDocument;
+
+  @UI.identification: [ {
+    position: 20
+  } ]
+  @UI.lineItem: [ {
+    position: 20
+  } ]
+  CompanyCode;
+
+  @UI.identification: [ {
+    position: 30
+  } ]
+  @UI.lineItem: [ {
+    position: 30
+  } ]
+  BillingDocumentType;
+
+
+  @UI.identification: [ {
+    position: 50
+  } ]
+  @UI.lineItem: [ {
+    position: 50
+  } ]
+  @UI.selectionField: [ {
+    position: 20
+  } ]
+  @Consumption.valueHelpDefinition: [
+  { entity: { name: 'zc_plantvh', element: 'Plant' } }
+  ]
+  Plant;
+
+  @UI.identification: [ {
+    position: 60
+  } ]
+  @UI.lineItem: [ {
+    position: 60
+  } ]
+  BillingDocumentDate;
+
+  @UI.identification: [ {
+    position: 70 ,
+    label: 'Party Code'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 ,
+    label: 'Party Code'
+  } ]
+  PartyCode;
+
+  @UI.identification: [ {
+    position: 80 ,
+    label: 'Party Name'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 ,
+    label: 'Party Name'
+  } ]
+  PartyName;
+
+  @UI.identification: [ {
+    position: 90
+  } ]
+  @UI.lineItem: [ {
+    position: 90
+  } ]
+  DistributionChannel;
+
+  @UI.identification: [ {
+    position: 100
+  } ]
+  @UI.lineItem: [ {
+    position: 100
+  } ]
+  @UI.selectionField: [ {
+    position: 30
+  } ]
+  DocumentReferenceID;
+
+  @EndUserText.label: 'IRN'
+  @UI.identification: [ {
+    position: 110 ,
+    label: 'IRN'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 ,
+    label: 'IRN'
+  } ]
+  IRNNo;
+
+  @EndUserText.label: 'IRN Status'
+  @UI.identification: [ {
+    position: 120 ,
+    label: 'IRN Status'
+  } ]
+  @UI.lineItem: [ {
+    position: 120 ,
+    label: 'IRN Status'
+  } ]
+  IRNStatus;
+
+  @EndUserText.label: 'Acknowledgement Number'
+  @UI.identification: [ {
+    position: 130 ,
+    label: 'Acknowledgement Number'
+  } ]
+  @UI.lineItem: [ {
+    position: 130 ,
+    label: 'Acknowledgement Number'
+  } ]
+  AckNo;
+
+  @EndUserText.label: 'Acknowledgement Date'
+  @UI.identification: [ {
+    position: 140 ,
+    label: 'Acknowledgement Date'
+  } ]
+  @UI.lineItem: [ {
+    position: 140 ,
+    label: 'Acknowledgement Date'
+  } ]
+  AckDate;
+
+  @EndUserText.label: 'IRN Cancel Date'
+  @UI.identification: [ {
+    position: 150 ,
+    label: 'IRN Cancel Date'
+  } ]
+  @UI.lineItem: [ {
+    position: 150 ,
+    label: 'IRN Cancel Date'
+  } ]
+  IrnCancelDate;
+
+  @EndUserText.label: 'Signed Invoice'
+  @UI.identification: [ {
+    position: 160 ,
+    label: 'Signed Invoice'
+  } ]
+  @UI.lineItem: [ {
+    position: 160 ,
+    label: 'Signed Invoice'
+  } ]
+  SignedInvoice;
+
+  @EndUserText.label: 'Signed QR Code'
+  @UI.identification: [ {
+    position: 170 ,
+    label: 'Signed QR Code'
+  } ]
+  @UI.lineItem: [ {
+    position: 170 ,
+    label: 'Signed QR Code'
+  } ]
+  SignedQRCode;
+
+  @EndUserText.label: 'Distance'
+  @UI.identification: [ {
+    position: 190 ,
+    label: 'Distance'
+  } ]
+  @UI.lineItem: [ {
+    position: 190 ,
+    label: 'Distance'
+  } ]
+  Distance;
+
+  @EndUserText.label: 'Vehicle Number'
+  @UI.identification: [ {
+    position: 200 ,
+    label: 'Vehicle Number'
+  } ]
+  @UI.lineItem: [ {
+    position: 200 ,
+    label: 'Vehicle Number'
+  } ]
+  VehicleNum;
+
+  @EndUserText.label: 'Eway Bill Number'
+  @UI.identification: [ {
+    position: 210 ,
+    label: 'Eway Bill Number'
+  } ]
+  @UI.lineItem: [ {
+    position: 210 ,
+    label: 'Eway Bill Number'
+  } ]
+  EwayBillNo;
+
+  @EndUserText.label: 'Eway Bill Date'
+  @UI.identification: [ {
+    position: 220 ,
+    label: 'Eway Bill Date'
+  } ]
+  @UI.lineItem: [ {
+    position: 220 ,
+    label: 'Eway Bill Date'
+  } ]
+  EwayDate;
+
+  @EndUserText.label: 'Eway Bill Valid Date'
+  @UI.identification: [ {
+    position: 221 ,
+    label: 'Eway Bill Valid Date'
+  } ]
+  @UI.lineItem: [ {
+    position: 221 ,
+    label: 'Eway Bill Valid Date'
+  } ]
+  EwayValidDate;
+
+  @EndUserText.label: 'Eway Bill Status'
+  @UI.identification: [ {
+    position: 230 ,
+    label: 'Eway Bill Status'
+  } ]
+  @UI.lineItem: [ {
+    position: 230 ,
+    label: 'Eway Bill Status'
+  } ]
+  EwayStatus;
+
+  @EndUserText.label: 'Eway Bill Cancel Date'
+  @UI.identification: [ {
+    position: 240 ,
+    label: 'Eway Bill Cancel Date'
+  } ]
+  @UI.lineItem: [ {
+    position: 240 ,
+    label: 'Eway Bill Cancel Date'
+  } ]
+  EwayCancelDate;
+
+  @EndUserText.label: 'Transporter Name'
+  @UI.identification: [ {
+    position: 250 ,
+    label: 'Transporter Name'
+  } ]
+  @UI.lineItem: [ {
+    position: 250 ,
+    label: 'Transporter Name'
+  } ]
+  TransporterName;
+
+  @EndUserText.label: 'Transporter GSTIN'
+  @UI.identification: [ {
+    position: 260 ,
+    label: 'Transporter GSTIN'
+  } ]
+  @UI.lineItem: [ {
+    position: 260 ,
+    label: 'Transporter GSTIN'
+  } ]
+  TransporterGSTIN;
+
+  @EndUserText.label: 'Transport Mode'
+  @UI.identification: [ {
+    position: 270 ,
+    label: 'Transport Mode'
+  } ]
+  @UI.lineItem: [ {
+    position: 270 ,
+    label: 'Transport Mode'
+  } ]
+  TransportMode;
+
+  @EndUserText.label: 'GR Number'
+  @UI.identification: [ {
+    position: 280 ,
+    label: 'GR Number'
+  } ]
+  @UI.lineItem: [ {
+    position: 280 ,
+    label: 'GR Number'
+  } ]
+  GRNo;
+
+  @EndUserText.label: 'GR Date'
+  @UI.identification: [ {
+    position: 290 ,
+    label: 'GR Date'
+  } ]
+  @UI.lineItem: [ {
+    position: 290 ,
+    label: 'GR Date'
+  } ]
+  GRDate;
+
+  @EndUserText.label: 'Container Number'
+  @UI.identification: [ {
+    position: 300 ,
+    label: 'Container Number'
+  } ]
+  @UI.lineItem: [ {
+    position: 300 ,
+    label: 'Container Number'
+  } ]
+  ContainerNo;
+
+  @EndUserText.label: 'Line Seal Number'
+  @UI.identification: [ {
+    position: 310 ,
+    label: 'Line Seal Number'
+  } ]
+  @UI.lineItem: [ {
+    position: 310 ,
+    label: 'Line Seal Number'
+  } ]
+  LineSealNo;
+
+  @EndUserText.label: 'Custom Seal Number'
+  @UI.identification: [ {
+    position: 320 ,
+    label: 'Custom Seal Number'
+  } ]
+  @UI.lineItem: [ {
+    position: 320 ,
+    label: 'Custom Seal Number'
+  } ]
+  CustomSealNo;
+
+  @EndUserText.label: 'Gross Weight'
+  @UI.identification: [ {
+    position: 330 ,
+    label: 'Gross Weight'
+  } ]
+  @UI.lineItem: [ {
+    position: 330 ,
+    label: 'Gross Weight'
+  } ]
+  GrossWeight;
+
+  @EndUserText.label: 'Net Weight'
+  @UI.identification: [ {
+    position: 340 ,
+    label: 'Net Weight'
+  } ]
+  @UI.lineItem: [ {
+    position: 340 ,
+    label: 'Net Weight'
+  } ]
+  NetWeight;
+
+  @EndUserText.label: 'Destination Country'
+  @UI.identification: [ {
+    position: 350 ,
+    label: 'Destination Country'
+  } ]
+  @UI.lineItem: [ {
+    position: 350 ,
+    label: 'Destination Country'
+  } ]
+  DestinationCountry;
+
+  @EndUserText.label: 'Booking Number'
+  @UI.identification: [ {
+    position: 360 ,
+    label: 'Booking Number'
+  } ]
+  @UI.lineItem: [ {
+    position: 360 ,
+    label: 'Booking Number'
+  } ]
+  BookingNo;
+
+
+  @EndUserText.label: 'Max Gross Weight'
+  @UI.identification: [ {
+    position: 380 ,
+    label: 'Max Gross Weight'
+  } ]
+  @UI.lineItem: [ {
+    position: 380 ,
+    label: 'Max Gross Weight'
+  } ]
+  MaxGrossWT;
+
+  @EndUserText.label: 'Cargo Tare Weight'
+  @UI.identification: [ {
+    position: 390 ,
+    label: 'Cargo Tare Weight'
+  } ]
+  @UI.lineItem: [ {
+    position: 390 ,
+    label: 'Cargo Tare Weight'
+  } ]
+  CTareWT;
+
+  @EndUserText.label: 'Max Cargo Weight'
+  @UI.identification: [ {
+    position: 400 ,
+    label: 'Max Cargo Weight'
+  } ]
+  @UI.lineItem: [ {
+    position: 400 ,
+    label: 'Max Cargo Weight'
+  } ]
+  MaxCargoWT;
+
+  @EndUserText.label: 'IRN Created By'
+  @UI.identification: [ {
+    position: 410,
+    label: 'IRN Created By'
+  } ]
+  @UI.lineItem: [ {
+    position: 410,
+    label: 'IRN Created By'
+  } ]
+  IrnCreatedBy;
+
+  @EndUserText.label: 'EWB Created By'
+  @UI.identification: [ {
+    position: 420 ,
+    label: 'EWB Created By'
+  } ]
+  @UI.lineItem: [ {
+    position: 420 ,
+    label: 'EWB Created By'
+  } ]
+  EwayCreatedBy;
+
+  @EndUserText.label: 'Shipping Bill Number'
+  @UI.identification: [ {
+    position: 421 ,
+    label: 'Shipping Bill Number'
+  } ]
+  @UI.lineItem: [ {
+    position: 421 ,
+    label: 'Shipping Bill Number'
+  } ]
+  Shipbno;
+
+  @EndUserText.label: 'Shipping Bill Date'
+  @UI.identification: [ {
+    position: 422 ,
+    label: 'Shipping Bill Date'
+  } ]
+  @UI.lineItem: [ {
+    position: 422 ,
+    label: 'Shipping Bill Date'
+  } ]
+  Shipbdt;
+
+  @EndUserText.label: 'Port Code'
+  @UI.identification: [ {
+    position: 423 ,
+    label: 'Port Code'
+  } ]
+  @UI.lineItem: [ {
+    position: 423 ,
+    label: 'Port Code'
+  } ]
+  Port;
+
+  @EndUserText.label: 'Refund Claim'
+  @UI.identification: [ {
+    position: 424 ,
+    label: 'Refund Claim'
+  } ]
+  @UI.lineItem: [ {
+    position: 424 ,
+    label: 'Refund Claim'
+  } ]
+  Refclm;
+
+  @EndUserText.label: 'Foreign Currency'
+  @UI.identification: [ {
+    position: 425 ,
+    label: 'Foreign Currency'
+  } ]
+  @UI.lineItem: [ {
+    position: 425 ,
+    label: 'Foreign Currency'
+  } ]
+  Forcur;
+
+  @EndUserText.label: 'Country Code'
+  @UI.identification: [ {
+    position: 426 ,
+    label: 'Country Code'
+  } ]
+  @UI.lineItem: [ {
+    position: 426 ,
+    label: 'Country Code'
+  } ]
+  Cntcode;
+
+  @EndUserText.label: 'Export Duty'
+  @UI.identification: [ {
+    position: 427 ,
+    label: 'Export Duty'
+  } ]
+  @UI.lineItem: [ {
+    position: 427 ,
+    label: 'Export Duty'
+  } ]
+  Expduty;
+
+  @EndUserText.label: 'Receiver Pincode'
+  @UI.identification: [ {
+    position: 428 ,
+    label: 'Receiver Pincode'
+  } ]
+  @UI.lineItem: [ {
+    position: 428 ,
+    label: 'Receiver Pincode'
+  } ]
+  Trans_ship_pin;
+
+
+  @UI.identification: [ {
+    position: 430
+  } ]
+  @UI.lineItem: [ {
+    position: 430
+  } ]
+  CreatedBy;
+
+  @UI.identification: [ {
+    position: 440
+  } ]
+  @UI.lineItem: [ {
+    position: 440
+  } ]
+  CreatedAt;
+
+  @UI.hidden: true
+  LastChangedBy;
+
+  @UI.hidden: true
+  LastChangedAt;
+
+  @UI.hidden: true
+  LocalLastChangedAt;
+
+}

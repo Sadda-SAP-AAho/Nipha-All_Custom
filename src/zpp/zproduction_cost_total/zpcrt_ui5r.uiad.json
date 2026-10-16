@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "ZProduction Cost Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "ZProduction Cost Report"
+  },
+  "ui5AppDetails": {
+    "appId": "zprocostrt"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_767A7967AD724773614994F83FC2F7BD6E79371C_TM",
+    "semanticObject": "ZPCRT",
+    "action": "ZPCRT",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_767A7967AD724773614994F83FC2F7BD6E79371C_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ZProduction Cost Report"
+      }
+    }
+  ]
+}

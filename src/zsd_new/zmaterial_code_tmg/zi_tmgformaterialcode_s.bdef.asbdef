@@ -1,0 +1,77 @@
+managed with additional save implementation in class ZBP_I_TMGFORMATERIALCODE_S unique;
+strict;
+with draft;
+define behavior for ZI_TmgForMaterialCode_S alias TmgForMaterialCoAll
+draft table ZDT_MATERIA_D_S
+with unmanaged save
+lock master total etag LastChangedAtMax
+authorization master( global )
+{
+  field ( readonly )
+   SingletonID;
+
+  field ( notrigger )
+   SingletonID,
+   LastChangedAtMax;
+
+
+  update;
+  internal create;
+  internal delete;
+
+  draft action ( features : instance ) Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+
+  association _TmgForMaterialCode { create ( features : instance ); with draft; }
+
+}
+
+define behavior for ZI_TmgForMaterialCode alias TmgForMaterialCode ##UNMAPPED_FIELD
+persistent table ZDT_MATERIALCODE
+draft table ZDT_MATERIALC_D
+lock dependent by _TmgForMaterialCoAll
+authorization dependent by _TmgForMaterialCoAll
+{
+  field ( mandatory : create )
+   MaterialCode;
+
+  field ( readonly )
+   SingletonID;
+
+  field ( readonly : update )
+   MaterialCode;
+
+  field ( notrigger )
+   SingletonID;
+
+
+  update( features : global );
+  delete( features : global );
+
+  factory action ( features : instance ) Copy parameter ZD_CopyTmgForMaterialCodeP [1];
+
+  determination fill_descrip on modify { field MaterialCode; }
+
+  mapping for ZDT_MATERIALCODE
+  {
+    MaterialCode = MATERIAL_CODE;
+    MaterialDesc = MATERIAL_DESC;
+    DivisionAttr1 = DIVISION_ATTR1;
+    DivisionAttr2 = DIVISION_ATTR2;
+    DivisionAttr3 = DIVISION_ATTR3;
+    ProductFamilyCode = PRODUCT_FAMILY_CODE;
+    ModelName = MODEL_NAME;
+    SideTransmissionType = SIDE_TRANSMISSION_TYPE;
+    MachineSize = MACHINE_SIZE;
+    ChangeGear = CHANGE_GEAR;
+    BladeType = BLADE_TYPE;
+    NoOfBlades = NO_OF_BLADES;
+    GearBoxType = GEAR_BOX_TYPE;
+  }
+
+  association _TmgForMaterialCoAll { with draft; }
+
+}

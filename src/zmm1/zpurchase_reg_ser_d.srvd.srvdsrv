@@ -1,0 +1,4 @@
+@EndUserText.label: 'Purchase Reg. Service Def.'
+define service ZPURCHASE_REG_SER_D {
+  expose ZPurchase_Register_final;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition:For ZCDS_COSTRPT_DDL3'
+define service Zservdef_costrpt {
+  expose zcds_costrpt_ddl3;
+}

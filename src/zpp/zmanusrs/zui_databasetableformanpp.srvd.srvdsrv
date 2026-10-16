@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_DatabaseTableForManPP_S'
+define service ZUI_DATABASETABLEFORMANPP {
+  expose ZI_DATABASETABLEFORMANPP_S as DatabaseTableForAll;
+  expose ZI_DATABASETABLEFORMANPP as DatabaseTableForMan;
+}

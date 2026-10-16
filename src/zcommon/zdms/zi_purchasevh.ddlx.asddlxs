@@ -1,0 +1,53 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'PurchaseOrder'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'SupplierName'
+annotate entity ZI_PURCHASEVH
+    with 
+{
+  @UI.lineItem: [{  position: 10}]
+  @UI.identification: [{ position: 10 }]
+  @UI.selectionField: [{ position: 10 }]
+  PurchaseOrder;
+  
+  @UI.lineItem: [{  position: 20}]
+  @UI.identification: [{ position: 20 }]
+  @UI.selectionField: [{ position: 20 }]
+  PurchaseOrderType;
+  
+  
+  @UI.lineItem: [{  position: 30}]
+  @UI.identification: [{ position: 30 }]
+  PurchaseOrderDate;
+  
+  @UI.selectionField: [{ position: 30 }]
+  @UI.lineItem: [{  position: 40}]
+  @UI.identification: [{ position: 40 }]
+  Supplier;
+  
+  @UI.lineItem: [{  position: 50}]
+  @UI.identification: [{ position: 50 }]
+  SupplierName;
+  
+  @UI.lineItem: [{  position: 60}]
+  @UI.identification: [{ position: 60 }]
+  CompanyCode;
+  
+  @UI.lineItem: [{  position: 70}]
+  @UI.identification: [{ position: 70 }]
+  PurchasingOrganization;
+
+  @UI.lineItem: [{  position: 80}]
+  @UI.identification: [{ position: 80 }]
+  PurchasingGroup;
+  
+  @UI.lineItem: [{  position: 90}]
+  @UI.identification: [{ position: 90 }]
+  @EndUserText.label: 'Attachment Count'
+  DocCount;
+  
+  @UI.lineItem: [{  position: 100}]
+  @UI.identification: [{ position: 100 }]
+  CreatedByUser;    
+}

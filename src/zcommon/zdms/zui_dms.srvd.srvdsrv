@@ -1,0 +1,16 @@
+@EndUserText.label: 'DMS Service Definitions'
+define service ZUI_DMS {
+  expose ZI_PURCHASEVH        as PurchaseVH;
+  expose ZI_PRODUCT_MASTER_VH as ProductVH;
+  expose ZI_CUSTOMERVH        as CustomerVH;
+  expose ZI_SALESVH           as SalesVH;
+  expose ZI_MIROVH            as MiroVH;
+  expose ZC_DMS               as DMS;
+  expose ZI_FILETYPE_VH       as FileTypeVH;
+  expose ZC_DMS_CONFIG        as DMSConfig;
+  expose ZC_DMS_ACTIVITYLOG   as DMSActivityLog;
+  expose ZC_PLANT_DMS         as PlantDMS;
+  expose ZI_SUPPLIERVH        as VendorVH;
+  expose ZC_DMS_BANKSTM000    as BankStm;
+  expose ZI_BANKSTM_DMS       as BankVH;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition for Serial No Report'
+define service ZUI_serial_no_report {
+  expose zce_serial_no_report;
+}

@@ -1,0 +1,79 @@
+@Metadata.layer: #CORE
+
+annotate view ZI_SUPPLIERVH with
+{
+  @UI.facet: [
+    {
+      id: 'SupplierInfo',
+      type: #COLLECTION,
+      label: 'Supplier Information',
+      position: 10
+    },
+    {
+      id: 'GeneralInfo',
+      parentId: 'SupplierInfo',
+      type: #FIELDGROUP_REFERENCE,
+      targetQualifier: 'GeneralInfo',
+      label: 'General Information',
+      position: 10
+    },
+    {
+      id: 'AddressInfo',
+      parentId: 'SupplierInfo',
+      type: #FIELDGROUP_REFERENCE,
+      targetQualifier: 'AddressInfo',
+      label: 'Address Information',
+      position: 20
+    }
+  ]
+
+  @UI.selectionField: [{ position: 10 }]
+  @UI.lineItem: [{ position: 10, label: 'Supplier' }]
+  @UI.fieldGroup: [{ qualifier: 'GeneralInfo', position: 10 }]
+  Supplier;
+
+  @UI.selectionField: [{ position: 20 }]
+  @UI.lineItem: [{ position: 20, label: 'Supplier Name' }]
+  @UI.fieldGroup: [{ qualifier: 'GeneralInfo', position: 20 }]
+  SupplierName;
+
+  @UI.lineItem: [{ position: 30, label: 'Supplier Full Name' }]
+  @UI.fieldGroup: [{ qualifier: 'GeneralInfo', position: 30 }]
+  SupplierFullName;
+  
+  @UI.selectionField: [{ position: 40 }]
+  @UI.lineItem: [{ position: 40, label: 'Account Group' }]
+  SupplierAccountGroup;
+
+  @UI.selectionField: [{ position: 41 }]
+  @UI.lineItem: [{ position: 41, label: 'Supplier Type' }]
+  BusinessPartnerType;
+  
+  @UI.selectionField: [{ position: 60 }]
+  @UI.lineItem: [{ position: 50, label: 'Region' }]
+  Region;
+
+  @UI.lineItem: [{ position: 60, label: 'City' }]
+  CityName;
+
+  @UI.lineItem: [{ position: 70, label: 'Postal Code' }]
+  PostalCode;
+
+  @UI.lineItem: [{ position: 80, label: 'Street' }]
+  StreetName;
+
+  @UI.lineItem: [{ position: 90, label: 'Phone Number' }]
+  PhoneNumber1;
+  
+  @UI.lineItem: [{  position: 100}]
+  @UI.identification: [{ position: 100 }]
+  @EndUserText.label: 'Attachment Count'
+  DocCount;   
+  
+  @UI.lineItem: [{ position: 110, label: 'Created By' }]
+  CreatedByUser;
+
+  @UI.lineItem: [{ position: 120, label: 'Creation Date' }]
+  CreationDate;
+
+}

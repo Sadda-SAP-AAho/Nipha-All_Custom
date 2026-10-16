@@ -1,0 +1,23 @@
+CLASS ztest_sales_reg DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    INTERFACES if_oo_adt_classrun.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZTEST_SALES_REG IMPLEMENTATION.
+
+
+  METHOD if_oo_adt_classrun~main.
+
+    DELETE FROM zsales_reg_tb WHERE invoiceno IS NOT INITIAL.
+    COMMIT WORK.
+
+  ENDMETHOD.
+ENDCLASS.

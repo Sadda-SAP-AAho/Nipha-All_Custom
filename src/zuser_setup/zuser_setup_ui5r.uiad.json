@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "User Setup"
+  },
+  "ui5AppDetails": {
+    "appId": "zusersetup"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_89EF0770C1B50643401D436C2625A99A3D1C74C3_TM",
+    "semanticObject": "ZUSERSETUP",
+    "action": "Maintain",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_89EF0770C1B50643401D436C2625A99A3D1C74C3_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "User Setup",
+        "subtitle": "ZUSERSETUP"
+      }
+    }
+  ]
+}
